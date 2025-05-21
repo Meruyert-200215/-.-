@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3-дәріс: Python Деректер түрлері</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <h1>
+            3-дәріс: Python Деректер түрлері
+
+        </h1>
+        <h2>
+            Кірістірілген деректер түрлері
+                </h2>
+        <p>
+            Бағдарламалауда деректер түрі маңызды ұғым болып табылады.<br>
+            Айнымалылар әртүрлі деректер түрлерін сақтай алады, және әртүрлі түрлер әртүрлі әрекеттерді орындай алады.
+                    </p>
+    </header>
+    <main>
+        <button onclick="window.close()">Артқа</button>
+        <section>
+            
+            <p>
+                Python тілінде әдепкі бойынша келесі деректер түрлері бар және олар келесі санаттарға бөлінеді:
+
+            </p>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Мәтін түрі:</td>
+                        <td>str</td>
+                    </tr>
+                    <tr>
+                        <td>Сандық түрлер:</td>
+                        <td>int, float, complex</td>
+                    </tr>
+                    <tr>
+                        <td>Тізбектік түрлер:</td>
+                        <td>list, tuple, range</td>
+                    </tr>
+                    <tr>
+                        <td>Көрсету түрі:</td>
+                        <td>dict</td>
+                    </tr>
+                    <tr>
+                        <td>Жиын түрлері:</td>
+                        <td>set, frozenset</td>
+                    </tr>
+                    <tr>
+                        <td>Логикалық түр</td>
+                        <td>bool</td>
+                    </tr>
+                    <tr>
+                        <td>Екілік түрлер</td>
+                        <td>bytes, bytearray, memoryview</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            </section>
+
+          
+
+<section>
+    <h2>
+        Деректер түрін алу
+        </h2>
+    <p>
+        Кез келген объектінің деректер түрін білу үшін <em>type()</em> функциясын пайдалануға болады.    </p>
+    <h2>
+        Мысал
+    </h2>
+    <p>
+        Айнымалы x-тің деректер түрін шығару:
+        </p>
+<pre><code>
+    x = 5
+    print(type(x))
+
+    </code></pre>
+
+</section>
+
+
+<section>
+    <h2>
+        Python-да деректер түрін орнату
+            </h2>
+    <p>
+        Python-да деректер түрі айнымалыға мән тағайындаған кезде автоматты түрде анықталады:
+        </p>
+           
+    <table>
+        <thead>
+            <tr>
+                <th>Мысал</th>
+                <th>Деректер түрі</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>x = "Сәлем Әлем"</td>
+                <td>str</td>
+            </tr>
+            <tr>
+                <td>x = 20</td>
+                <td>int</td>
+            </tr>
+            <tr>
+                <td>x = 20.5</td>
+                <td>float</td>
+            </tr>
+            <tr>
+                <td>x = 1j</td>
+                <td>complex</td>
+            </tr>
+            <tr>
+                <td>x = ["алма", "банан", "шие"]</td>
+                <td>list</td>
+            </tr>
+            <tr>
+                <td>x = ("алма", "банан", "шие")</td>
+                <td>tuple</td>
+            </tr>
+            <tr>
+                <td>x = range(6)</td>
+                <td>range</td>
+            </tr>
+            <tr>
+                <td>x = {"name": "Айдар", "age": 36}</td>
+                <td>dict</td>
+            </tr>
+            <tr>
+                <td>x = {"алма", "банан", "шие"}</td>
+                <td>set</td>
+            </tr>
+            <tr>
+                <td>x = frozenset({"алма", "банан", "шие"})</td>
+                <td>frozenset</td>
+            </tr>
+            <tr>
+                <td>x = True</td>
+                <td>bool</td>
+            </tr>
+            <tr>
+                <td>x = b"Сәлем"</td>
+                <td>bytes</td>
+            </tr>
+            <tr>
+                <td>x = bytearray(5)</td>
+                <td>bytearray</td>
+            </tr>
+            <tr>
+                <td>x = memoryview(bytes(5))</td>
+                <td>memoryview</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+
+<section>
+    <h2>Белгілі бір деректер түрін орнату</h2>
+    <p>Егер деректер түрін <em>нақты</em> көрсету қажет болса, келесі құрылымдық функцияларды пайдалануға болады:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Мысал</th>
+                        <th>Деректер түрі</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>x = str("Сәлем Әлем")</td>
+                        <td>str</td>
+                    </tr>
+                    <tr>
+                        <td>x = int(20)</td>
+                        <td>int</td>
+                    </tr>
+                    <tr>
+                        <td>x = float(20.5)</td>
+                        <td>float</td>
+                    </tr>
+                    <tr>
+                        <td>x = complex(1j)</td>
+                        <td>complex</td>
+                    </tr>
+                    <tr>
+                        <td>x = list(("алма", "банан", "шие"))</td>
+                        <td>list</td>
+                    </tr>
+                    <tr>
+                        <td>x = tuple(("алма", "банан", "шие"))</td>
+                        <td>tuple</td>
+                    </tr>
+                    <tr>
+                        <td>x = range(6)</td>
+                        <td>range</td>
+                    </tr>
+                    <tr>
+                        <td>x = dict(name="Айдар", age=36)</td>
+                        <td>dict</td>
+                    </tr>
+                    <tr>
+                        <td>x = set(("алма", "банан", "шие"))</td>
+                        <td>set</td>
+                    </tr>
+                    <tr>
+                        <td>x = frozenset(("алма", "банан", "шие"))</td>
+                        <td>frozenset</td>
+                    </tr>
+                    <tr>
+                        <td>x = bool(5)</td>
+                        <td>bool</td>
+                    </tr>
+                    <tr>
+                        <td>x = bytes(5)</td>
+                        <td>bytes</td>
+                    </tr>
+                    <tr>
+                        <td>x = bytearray(5)</td>
+                        <td>bytearray</td>
+                    </tr>
+                    <tr>
+                        <td>x = memoryview(bytes(5))</td>
+                        <td>memoryview</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+</section>
+    </main>
+</body>
+</html>

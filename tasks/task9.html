@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практикалық тапсырмалар</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <h1>Лямбда</h1>
+    </header>
+    <main>
+        <button onclick="window.close()">Артқа</button>
+        <section>
+            <h2>1-Тапсырма:  </h2>
+            <p> 
+                Бір параметрді (a) қабылдайтын және оны қайтаратын ламбда функциясын жасаңыз.<br>
+                <em>
+               x = 
+            </em></p>
+            <div class="hint" id="hint1" style="display: none;">
+                <strong>Кеңес:</strong>  <code> 
+                    lambda </code> қолданыңыз.
+            </div>
+            <textarea id="code1" rows="4" cols="50" placeholder="Кодты осында енгізіңіз..."></textarea><br>
+            <button type="button" id="check1">Тексеру</button>
+            <div id="result1" style="display: none;"></div>
+        </section>
+
+       
+    </main>
+
+    <script>
+        // 1-тапсырманы тексеру
+        document.getElementById('check1').addEventListener('click', function () {
+            const userCode = document.getElementById('code1').value.trim();
+            const result = document.getElementById('result1');
+            const hint = document.getElementById('hint1');
+            
+            if (userCode === 'lambda = a : a') {
+                result.textContent = 'Тапсырма орындалды!';
+                result.style.color = 'green';
+            } else {
+                result.textContent = 'Қате! ';
+                result.style.color = 'red';
+                hint.style.display = 'block';
+            }
+            result.style.display = 'block';
+        });
+
+     
+    </script>
+    
+</body>
+</html>

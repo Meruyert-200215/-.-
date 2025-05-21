@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python тестілері</title>
+    <link rel="stylesheet" href="../style.css">
+    
+</head>
+<body>
+    <header>
+        <h1>8 - Python типтері</h1>
+    </header>
+    <main>
+        <button onclick="window.close()">Артқа</button>
+        <form id="quiz-form">
+            <section>
+                <h2>Сұрақ 1</h2>
+                <p>bool(-1) типін өзгерту нәтежесінде не шығады?</p>
+                <input type="radio" id="q2-a1" name="q1" value="wrong">
+                <label for="q1-a1">False</label><br>
+                <input type="radio" id="q2-a2" name="q1" value="correct">
+                <label for="q1-a2"> True</label><br>
+                <input type="radio" id="q2-a3" name="q1" value="wrong">
+                <label for="q1-a3"> None</label><br>
+                <input type="radio" id="q2-a4" name="q1" value="wrong">
+                <label for="q1-a4">    1  </label>
+            </section><section>
+                <h2>Сұрақ 2</h2>
+                <p> str([1, '2', 3]) типін өзгерту нәтежесінде не шығады?</p>
+                <input type="radio" id="q2-a1" name="q2" value="correct">
+                <label for="q2-a1">"[1, '2', 3]"</label><br>
+                <input type="radio" id="q2-a2" name="q2" value="wrong">
+                <label for="q2-a2"> "1, '2', 3" </label><br>
+                <input type="radio" id="q2-a3" name="q2" value="wrong">
+                <label for="q2-a3"> ['1', '2', '3']</label><br>
+                <input type="radio" id="q2-a4" name="q2" value="wrong">
+                <label for="q2-a4"> [1, '2', 3]  </label>
+            </section>
+            
+            <section>
+                <h2>Сұрақ 3</h2>
+                <p>
+                    float('-42 ') типін өзгерту нәтежесінде не шығады?    
+                </p>
+                <input type="radio" id="q3-a1" name="q3" value="wrong">
+                <label for="q3-a1">
+                    -4.2e-1            
+                </label><br>
+                <input type="radio" id="q3-a2" name="q3" value="wrong">
+                <label for="q3-a2">
+                    қате
+                </label><br>
+                <input type="radio" id="q3-a2" name="q3" value="wrong">
+                <label for="q3-a2">
+                     -42.0  
+                </label><br>
+                <input type="radio" id="q3-a4" name="q3" value="correct">
+                <label for="q3-a4">
+                    -42.0
+                </label>
+            </section><section>
+                <h2>Сұрақ 4</h2>
+                <p>
+                    bool(' False ') типін өзгерту нәтежесінде не шығады?
+                </p>
+                <input type="radio" id="q4-a1" name="q4" value="wrong">
+                <label for="q4-a1">
+                    'False'  
+                </label><br>
+                <input type="radio" id="q4-a2" name="q4" value="correct">
+                <label for="q4-a2">
+                    True   
+                </label><br>
+                <input type="radio" id="q4-a3" name="q4" value="wrong">
+                <label for="q4-a3">                  
+                    False
+                </label><br>
+                <input type="radio" id="q4-a4" name="q4" value="wrong">
+                <label for="q4-a4">
+                    қате
+                </label>
+            </section>
+            <section>
+                <h2>Сұрақ 5</h2>
+                <p>
+                    tuple(" hello ") типін өзгерту нәтежесінде не шығады?
+                </p>
+                <input type="radio" id="q5-a1" name="q5" value="correct">
+                <label for="q5-a1">
+                    (' ', 'h', 'e', 'l', 'l', 'o', ' ')
+                  </label><br>
+                <input type="radio" id="q5-a2" name="q5" value="wrong">
+                <label for="q5-a2">
+                     ('h', 'e', 'l', 'l', 'o'),    
+                </label><br>
+                <input type="radio" id="q5-a3" name="q5" value="wrong">
+                <label for="q5-a3">
+                    (" hello ",)
+                </label><br>
+                <input type="radio" id="q5-a4" name="q5" value="wrong">
+                <label for="q5-a4">
+                    (" hello ")
+                </label>
+            </section>
+            <section>
+                <h2>Сұрақ 6</h2>
+                <p>
+                    set([1, 2, 3, 3]) типін өзгерту нәтежесінде не шығады?
+                </p>
+                <input type="radio" id="q6-a1" name="q6" value="wrong">
+                <label for="q6-a1">
+                     {1, 2, 3,3}
+                </label><br>
+                <input type="radio" id="q6-a2" name="q6" value="correct">
+                <label for="q6-a2">
+                    {1, 2, 3}
+                </label><br>
+                <input type="radio" id="q6-a3" name="q6" value="wrong">
+                <label for="q6-a3">
+                    [1, 2, 3, 3]
+
+                </label><br>
+                <input type="radio" id="q6-a4" name="q6" value="wrong">
+                <label for="q6-a4">
+                     [1, 2, 3]
+                </label>
+            </section>
+            
+            
+            <section>
+                <h2>Сұрақ 7</h2>
+                <p>
+                    Кодтың орындалу нәтижесінде экранда не шығарылады?<p>
+                        Шарт:
+                    </p><pre><code>
+res = int(True) + float(True)
+print(res)
+                        
+                    </code></pre>
+                </p>
+                <input type="radio" id="q7-a1" name="q7" value="wrong">
+                <label for="q7-a1">
+                    2.0
+                </label><br>
+                <input type="radio" id="q7-a2" name="q7" value="correct">
+                <label for="q7-a2">
+                    2
+                </label><br>
+                <input type="radio" id="q7-a3" name="q7" value="wrong">
+                <label for="72-a3">
+                    0.0
+                </label>
+            </section><section>
+                <h2>Сұрақ 8</h2>
+                <p>
+                
+                    int(-0.319e2) типін өзгерту нәтежесінде не шығады?
+                </p>
+                <input type="radio" id="q8-a1" name="q8" value="wrong">
+                <label for="q8-a1">
+0
+                </label><br>
+                <input type="radio" id="q8-a2" name="q8" value="correct">
+                <label for="q8-a2">
+-31
+                </label><br>
+                <input type="radio" id="q8-a3" name="q8" value="wrong">
+                <label for="q8-a3">
+                    -3
+                </label>
+            </section><section>
+                <h2>Сұрақ 9</h2>
+                <p>
+                    
+                    list({'a': 1, 'b': 2, 'c': 3}) типін өзгерту нәтежесінде не шығады?
+                </p>
+                <input type="radio" id="q9-a1" name="q9" value="wrong">
+                <label for="q9-a1">
+                    [('a', 1), ('b', 2), ('c', 3)]
+                </label><br>
+                <input type="radio" id="q9-a2" name="q9" value="correct">
+                <label for="q9-a2">
+                    ['a', 'b', 'c']
+                </label><br>
+                <input type="radio" id="q9-a3" name="q9" value="wrong">
+                <label for="q9-a3">
+                    [1, 2, 3]
+                </label>
+            </section><section>
+                <h2>Сұрақ 10</h2>
+                <p>
+                    dict(['a', 'b']) типін өзгерту нәтежесінде не шығады?
+
+                </p>
+                <input type="radio" id="q10-a1" name="q10" value="wrong">
+                <label for="q10-a1">
+                    {'a': None, 'b': None}
+                </label><br>
+                <input type="radio" id="q10-a2" name="q10" value="correct">
+                <label for="q10-a2">
+                    қате
+                </label><br>
+                <input type="radio" id="q10-a3" name="q10" value="wrong">
+                <label for="q10-a3">
+                    {'a': False, 'b': False}
+                </label>
+            </section>
+
+            
+            <button type="button" id="submit-quiz">Жауаптарды тексеру</button>
+            <button type="button" id="reset-quiz" class="hidden">Тестті қайтадан тапсыру</button>
+        </form>
+
+        <div id="quiz-results" class="hidden">
+            <h2>Нәтиже:</h2>
+            <p id="score"></p>
+            <p id="incorrect-answers"></p>
+        </div>
+    </main>
+
+    <script>
+        document.getElementById('submit-quiz').addEventListener('click', function () {
+            const questions = document.querySelectorAll('form section');
+            let score = 0;
+            let incorrectAnswers = [];
+
+            questions.forEach((section, index) => {
+                const questionNumber = index + 1;
+                const selected = section.querySelector('input[name="q' + questionNumber + '"]:checked');
+
+                if (selected) {
+                    if (selected.value === 'correct') {
+                        score++;
+                    } else {
+                        incorrectAnswers.push(`Сұрақ ${questionNumber}`);
+                    }
+                } else {
+                    incorrectAnswers.push(`Сұрақ ${questionNumber} (жауап жоқ)`);
+                }
+            });
+
+            document.getElementById('score').textContent = `Сіз ${questions.length} сұрақтың ${score} дұрыс жауап бердіңіз.`;
+            document.getElementById('incorrect-answers').textContent = incorrectAnswers.length 
+                ? `Қателер: ${incorrectAnswers.join(', ')}.` 
+                : 'Сіз барлық сұрақтарға дұрыс жауап бердіңіз!';
+
+            document.getElementById('quiz-results').classList.remove('hidden');
+
+           // Тексеруден кейін радио түймелерін құлыптау
+            const inputs = document.querySelectorAll('input[type="radio"]');
+            inputs.forEach(input => {
+                input.disabled = true;
+            });
+
+         // Тестті қайта тапсыру үшін түймені көрсету
+            document.getElementById('reset-quiz').classList.remove('hidden');
+        });
+
+        // Тестті қалпына келтіру
+        document.getElementById('reset-quiz').addEventListener('click', function () {
+           // Барлық радио түймелерін қалпына келтіру
+            const inputs = document.querySelectorAll('input[type="radio"]');
+            inputs.forEach(input => {
+                input.checked = false;
+                input.disabled = false;
+            });
+
+            // Нәтижелерді және қайта өту түймесін жасыру
+            document.getElementById('quiz-results').classList.add('hidden');
+            document.getElementById('reset-quiz').classList.add('hidden');
+        });
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python тестілері</title>
+    <link rel="stylesheet" href="../style.css">
+    
+</head>
+<body>
+    <header>
+        <h1>1 - Python тестілері</h1>
+    </header>
+    <main>
+        <button onclick="window.close()">Артқа</button>
+
+        <form id="quiz-form">
+            <section>
+                <h2>Сұрақ 1</h2>
+                <p>Python тілінде "Сәлем" деп қалай шығарылады?</p>
+                <input type="radio" id="q1-a1" name="q1" value="correct">
+                <label for="q1-a1">print("Сәлем")</label><br>
+                <input type="radio" id="q1-a2" name="q1" value="wrong">
+                <label for="q1-a2">p("Сәлем")</label><br>
+                <input type="radio" id="q1-a3" name="q1" value="wrong">
+                <label for="q1-a3">echo("Сәлем"):</label><br>
+                <input type="radio" id="q1-a4" name="q1" value="wrong">
+                <label for="q1-a4">echo "Сәлем"</label>
+            </section>
+
+            <section>
+                <h2>Сұрақ 2</h2>
+                <p><code>x = 3 + 2 * 2</code> Кодты орындағаннан кейін <code>x</code> айнымалысы қандай мәнге ие болады?</p>
+                <input type="radio" id="q2-a1" name="q2" value="wrong">
+                <label for="q2-a1">10</label><br>
+                <input type="radio" id="q2-a2" name="q2" value="correct">
+                <label for="q2-a2">7</label><br>
+                <input type="radio" id="q2-a3" name="q2" value="wrong">
+                <label for="q2-a3">5</label>
+            </section>
+            <section>
+                <h2>Сұрақ 3</h2>
+                <P>
+                    Python кодында түсініктемелерді қалай жазасыз?
+                </P>
+                <input type="radio" id="q2-a1" name="q3" value="wrong">
+                <label for="q3-a1">/Бұл түсініктеме/</label><br>
+                <input type="radio" id="q2-a2" name="q3" value="correct">
+                <label for="q3-a2">#Бұл түсініктеме</label><br>
+                <input type="radio" id="q2-a3" name="q3" value="wrong">
+                <label for="q3-a3">//Бұл түсініктеме</label>
+            </section>
+            <section>
+                <h2>Сұрақ 4</h2>
+                <p>
+                    Қайсысы жарамсыз айнымалы атауы болып табылады?
+                </p>
+                <input type="radio" id="q2-a1" name="q4" value="wrong">
+                <label for="q4-a1">Myvar</label><br>
+                <input type="radio" id="q2-a2" name="q4" value="correct">
+                <label for="q4-a2">my-var</label><br>
+                <input type="radio" id="q2-a3" name="q4" value="wrong">
+                <label for="q4-a3">_myvar</label><br>
+                <input type="radio" id="q2-a4" name="q4" value="wrong">
+                <label for="q4-a4">my_var</label>
+            </section>
+            <section>
+                <h2>Сұрақ 5</h2>
+<p>
+    5 мәнімен айнымалыны қалай құруға болады?
+                </p>       
+                <input type="radio" id="q2-a1" name="q5" value="wrong">
+                <label for="q5-a1">
+                    x = int(5)
+                </label><br>
+                <input type="radio" id="q2-a2" name="q5" value="correct">
+                <label for="q5-a2">
+                    Қалған жауаптар да дұрыс
+                </label><br>
+                <input type="radio" id="q2-a3" name="q5" value="wrong">
+                <label for="q5-a3">
+                    х=5
+                </label>
+            </section>
+            <section>
+                <h2>Сұрақ 6</h2>
+                <p>
+                    Python файлдарының дұрыс кеңейтімін көрсетіңіз:
+                </p>
+                <input type="radio" id="q2-a1" name="q6" value="wrong">
+                <label for="q6-a1">
+                    .pt
+                </label><br>
+                <input type="radio" id="q2-a2" name="q6" value="correct">
+                <label for="q6-a2">
+                    .py
+                </label><br>
+                <input type="radio" id="q2-a3" name="q6" value="wrong">
+                <label for="q6-a3">
+                    .pyt
+                </label><br>
+                <input type="radio" id="q2-a4" name="q6" value="wrong">
+                <label for="q6-a4">
+                    .pyth
+                </label><br>
+            </section>
+            <section>
+                <h2>Сұрақ 7</h2>
+                <p>
+                    2.8 мәнімен айнымалыны қалай құруға болады?
+                </p>
+                <input type="radio" id="q2-a1" name="q7" value="correct">
+                <label for="q7-a1">
+                Қалған жауаптар да дұрыс 
+                 </label><br>
+                <input type="radio" id="q2-a2" name="q7" value="wrong">
+                <label for="q7-a2">
+                 x = 2.8
+                </label><br>
+                <input type="radio" id="q2-a3" name="q7" value="wrong">
+                <label for="q7-a3">
+                 x = float(2.8)
+                </label>
+            </section>
+            <section>
+                <h2>Сұрақ 8</h2>
+                <p>
+                    Python тілінде айнымалы немесе объектінің түрін қалай шығару керек?
+                </p>
+                <input type="radio" id="q2-a1" name="q8" value="wrong">
+                <label for="q8-a1">
+                    print(typeof(x))
+                   
+                </label><br>
+                <input type="radio" id="q2-a2" name="q8" value="correct">
+                <label for="q8-a2">
+                    print(type(x))
+                </label><br>
+                <input type="radio" id="q2-a3" name="q8" value="wrong">
+                <label for="q8-a3">
+                     print(typeOf(x))
+                </label><br>
+                <input type="radio" id="q2-a4" name="q8" value="wrong">
+                <label for="q8-a4">
+                    print(typeof x)
+                </label>
+               
+            </section><section>
+                <h2>Сұрақ 9</h2>
+                <p>
+                    Python-да функцияны қалай дұрыс құруға болады?
+                </p>
+                <input type="radio" id="q2-a1" name="q9" value="wrong">
+                <label for="q9-a1">
+                    function myfunction():
+                </label><br>
+                <input type="radio" id="q2-a2" name="q9" value="correct">
+                <label for="q9-a2">
+                    def myFunction():
+                </label><br>
+                <input type="radio" id="q2-a3" name="q9" value="wrong">
+                <label for="q9-a3">
+                    create myFunction():
+                </label>
+            </section><section>
+                <h2>Сұрақ 10</h2>
+                <p>
+                    Python тілінде 'Сәлем'  "Сәлем" сөзімен бірдей ме?
+                </p>
+                <input type="radio" id="q2-a1" name="q10" value="wrong">
+                <label for="q10-a1">
+                    ЖОҚ
+                </label><br>
+                <input type="radio" id="q2-a2" name="q10" value="correct">
+                <label for="q10-a2">
+                    ИӘ
+                </label><br>
+                </label>
+            </section><section>
+                <h2>Сұрақ 11</h2>
+                <p>
+                    Жолдағы бірінші символды қалай қайтаруға болады?  
+                </p>
+                <input type="radio" id="q2-a1" name="q11" value="wrong">
+                <label for="q11-a1">
+                    x =  «Сәлем «.sub(0, 1)
+                </label><br>
+                <input type="radio" id="q2-a2" name="q11" value="correct">
+                <label for="q11-a2">
+                    x =  «Сәлем «[0]
+                </label><br>
+                <input type="radio" id="q2-a3" name="q11" value="wrong">
+                <label for="q11-a3">
+                    x = sub( «Сәлем «, 0, 1)
+                </label>
+            </section><section>
+                <h2>Сұрақ 12</h2>
+                <p>
+                    Жолдың басындағы және соңындағы бос орындарды алып тастау үшін қандай әдісті қолдануға болады?
+                </p>
+                <input type="radio" id="q2-a1" name="q12" value="wrong">
+                <label for="q12-a1">
+                    ptrim()                   
+                </label><br>
+                <input type="radio" id="q2-a2" name="q12" value="correct">
+                <label for="q12-a2">
+                    strip()
+                </label><br>
+                <input type="radio" id="q2-a3" name="q12" value="wrong">
+                <label for="q12-a3">
+                    trim()                   
+                </label><br>
+                <input type="radio" id="q2-a4" name="q12" value="wrong">
+                <label for="q12-a3">
+                    len()
+                </label><br>
+            </section>
+            <section>
+                <h2>Сұрақ 13</h2>
+                <p>
+                    Жолды бас әріптерге ауыстыру үшін қандай әдіс қолданылады? 
+                </p>
+                <input type="radio" id="q2-a1" name="q13" value="wrong">
+                <label for="q13-a1">
+                    upperCase()
+                </label><br>
+                <input type="radio" id="q2-a2" name="q13" value="correct">
+                <label for="q13-a2">
+                    upper()
+                </label><br>
+                <input type="radio" id="q2-a3" name="q13" value="wrong">
+                <label for="q13-a3">
+                    toUpperCase()
+                </label><br>
+                <input type="radio" id="q2-a4" name="q13" value="wrong">
+                <label for="q13-a4">
+                  uppercase()
+                </label>
+            </section>
+            <section>
+                <h2>Сұрақ 14</h2>
+                <p>
+                    Жолдың кейбір бөліктерін ауыстыру үшін қандай әдіс қолданылады?
+                </p>
+                <input type="radio" id="q2-a1" name="q14" value="wrong">
+                <label for="q14-a1">
+                    replaceString()
+                    switch()
+                  </label><br>
+                <input type="radio" id="q2-a2" name="q14" value="correct">
+                <label for="q14-a2">
+                    replace()
+                </label><br>
+                <input type="radio" id="q2-a3" name="q14" value="wrong">
+                <label for="q14-a3">
+                    repl()
+                </label>
+            </section>
+            <section>
+                <h2>Сұрақ 15</h2>
+                <p>
+                    Сандарды көбейту үшін қандай оператор қолданылады?
+                </p>
+                <input type="radio" id="q2-a1" name="q15" value="wrong">
+                <label for="q15-a1">
+                    %
+                </label><br>
+                <input type="radio" id="q2-a2" name="q15" value="correct">
+                <label for="q15-a2">
+                    *
+                 </label><br>
+                <input type="radio" id="q2-a3" name="q15" value="wrong">
+                <label for="q15-a3">
+                    X
+                </label>
+            </section>
+
+            <button type="button" id="submit-quiz">Жауаптарды тексеру</button>
+            <button type="button" id="reset-quiz" class="hidden">Тестті қайтадан тапсыру</button>
+        </form>
+
+        <div id="quiz-results" class="hidden">
+            <h2>Нәтиже:</h2>
+            <p id="score"></p>
+            <p id="incorrect-answers"></p>
+        </div>
+    </main> 
+
+    <script>
+        document.getElementById('submit-quiz').addEventListener('click', function () {
+            const questions = document.querySelectorAll('form section');
+            let score = 0;
+            let incorrectAnswers = [];
+
+            questions.forEach((section, index) => {
+                const questionNumber = index + 1;
+                const selected = section.querySelector('input[name="q' + questionNumber + '"]:checked');
+
+                if (selected) {
+                    if (selected.value === 'correct') {
+                        score++;
+                    } else {
+                        incorrectAnswers.push(`Сұрақ ${questionNumber}`);
+                    }
+                } else {
+                    incorrectAnswers.push(`Сұрақ ${questionNumber} (жауап жоқ)`);
+                }
+            });
+
+            document.getElementById('score').textContent = `Сіз ${questions.length}
+             сұрақтың ${score} дұрыс жауап бердіңіз.`;
+            document.getElementById('incorrect-answers').textContent = incorrectAnswers.length 
+                ? `Қателер: ${incorrectAnswers.join(', ')}.` 
+                : 'Сіз барлық сұрақтарға дұрыс жауап бердіңіз!';
+
+            document.getElementById('quiz-results').classList.remove('hidden');
+
+           // Тексеруден кейін радио түймелерін құлыптау
+            const inputs = document.querySelectorAll('input[type="radio"]');
+            inputs.forEach(input => {
+                input.disabled = true;
+            });
+
+         // Тестті қайта тапсыру үшін түймені көрсету
+            document.getElementById('reset-quiz').classList.remove('hidden');
+        });
+
+        // Тестті қалпына келтіру
+        document.getElementById('reset-quiz').addEventListener('click', function () {
+           // Барлық радио түймелерін қалпына келтіру
+            const inputs = document.querySelectorAll('input[type="radio"]');
+            inputs.forEach(input => {
+                input.checked = false;
+                input.disabled = false;
+            });
+
+            // Нәтижелерді және қайта өту түймесін жасыру
+            document.getElementById('quiz-results').classList.add('hidden');
+            document.getElementById('reset-quiz').classList.add('hidden');
+        });
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практикалық тапсырмалар</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <h1>Мұрагерлік</h1>
+    </header>
+    <main>
+        <button onclick="window.close()">Артқа</button>
+        <section>
+            <h2>1-Тапсырма:  </h2>
+            <p> 
+                Person деп аталатын сыныптан қасиеттер мен әдістерді мұра ететін Student деп аталатын сыныпты құрудың дұрыс 
+                синтаксисі қандай?<br><em>
+                    class  : </em></p>
+            <div class="hint" id="hint1" style="display: none;">
+                <strong>Кеңес:</strong>  <code> 
+                    Student(Person)</code> қолданыңыз.
+            </div>
+            <textarea id="code1" rows="4" cols="50" placeholder="Кодты осында енгізіңіз..."></textarea><br>
+            <button type="button" id="check1">Тексеру</button>
+            <div id="result1" style="display: none;"></div>
+        </section>
+
+        <section>
+            <h2>2-Тапсырма:</h2>
+            <p>
+                Біз x деп аталатын нысанды жасау үшін Student сыныбын қолдандық. <br>
+
+X объектісіне printname әдісін орындау үшін дұрыс синтаксис қандай?
+
+ <br>
+<i>class Person: def __init__(self, fname): self.firstname = fname def printname(self): print(self.firstname) class Student( Person): pass x = Student("Эндрю") </i>
+            </p>
+            <div class="hint" id="hint2" style="display: none;">
+                <strong>Кеңес:</strong> <code>x.printname()</code> көмегімен жүзеге асырылады .
+            </div>
+            <textarea id="code2" rows="4" cols="50" placeholder="Кодты осында енгізіңіз..."></textarea><br>
+            <button type="button" id="check2">Тексеру</button>
+            <div id="result2" style="display: none;"></div>
+        </section>
+
+    </main>
+
+    <script>
+        // 1-тапсырманы тексеру
+        document.getElementById('check1').addEventListener('click', function () {
+            const userCode = document.getElementById('code1').value.trim();
+            const result = document.getElementById('result1');
+            const hint = document.getElementById('hint1');
+            
+            if (userCode === 'class Student(Person): ') {
+                result.textContent = 'Тапсырма орындалды!';
+                result.style.color = 'green';
+            } else {
+                result.textContent = 'Қате! ';
+                result.style.color = 'red';
+                hint.style.display = 'block';
+            }
+            result.style.display = 'block';
+        });
+
+        // 2-тапсырманы тексеру
+        document.getElementById('check2').addEventListener('click', function () {
+            const userCode = document.getElementById('code2').value.trim();
+            const result = document.getElementById('result2');
+            const hint = document.getElementById('hint2');
+            
+            if (userCode === 'class Person: def __init__(self, fname): self.firstname = fname def printname(self): print(self.firstname) class Student( Person): pass x = Student("Эндрю") x.printname()') {
+                result.textContent = 'Тапсырма орындалды!';
+                result.style.color = 'green';
+            } else {
+                result.textContent = 'Қате! ';
+                result.style.color = 'red';
+                hint.style.display = 'block';
+            }
+            result.style.display = 'block';
+        });
+
+    </script>
+    
+</body>
+</html>

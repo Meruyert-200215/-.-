@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7-дәріс: Python Операторлары</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <header>
+        <h1>7-дәріс: Python Операторлары</h1>
+        <p>Операторлар айнымалылар мен мәндерге әртүрлі операцияларды орындау үшін қолданылады.</p>
+    </header>
+    <main><button onclick="window.close()">Артқа</button>
+        <section> <p>Мысалы, екі мәнді қосу үшін "+" операторын қолданамыз:</p>
+            <h2>Мысал:</h2>
+            <pre><code>
+                print(10 + 5)
+            </code></pre>
+            <p>Python операторлары келесі топтарға бөлінеді:
+            <Ol>
+                Арифметикалық операторлар
+                Меншіктеу операторлары
+                Салыстыру операторлары
+                Логикалық операторлар
+                Идентификация операторлары
+                Тиістілік операторлары
+                Биттік операторлар
+            </Ol>
+            </p>
+        </section>
+
+        <section>
+            <h2>Python Арифметикалық операторлары</h2>
+            <p>Арифметикалық операторлар сандармен жұмыс істеп, негізгі математикалық операцияларды орындайды</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Оператор</th>
+                        <th>Атауы</th>
+                        <th>Мысалы</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>+</td>
+                        <td>Қосу</td>
+                        <td>x + y</td>
+                    </tr>
+                    <tr>
+                        <td>-</td>
+                        <td>Алу</td>
+                        <td>x - y</td>
+                    </tr>
+                    <tr>
+                        <td>*</td>
+                        <td>Көбейту</td>
+                        <td>x * y</td>
+                    </tr>
+                    <tr>
+                        <td>/</td>
+                        <td>Бөлшекпен бөлу</td>
+                        <td>x / y</td>
+                    </tr>
+                    <tr>
+                        <td> %</td>
+                        <td>Қалдықты табу</td>
+                        <td>x % y</td>
+                    </tr>
+                    <tr>
+                        <td>**</td>
+                        <td>Дәрежеге шығару</td>
+                        <td>x ** y</td>
+                    </tr>
+                    <tr>
+                        <td>// </td>
+                        <td>Бүтін бөлу</td>
+                        <td>x // y</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+
+        <section>
+            <h2>
+                Python Меншіктеу операторлары
+            </h2>
+            <p>
+                Бұл операторлар айнымалыға мәндерді меншіктеу үшін қолданылады:
+            </p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Оператор</th>
+                        <th>Мысалы</th>
+                        <th>Сол сияқты</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>=</td>
+                        <td>x = 5</td>
+                        <td>x = 5</td>
+                    </tr>
+                    <tr>
+                        <td>+=</td>
+                        <td>x += 3</td>
+                        <td>x = x + 3</td>
+                    </tr>
+                    <tr>
+                        <td>-=</td>
+                        <td>x -= 3</td>
+                        <td>x = x - 3</td>
+                    </tr>
+
+                    <tr>
+                        <td>*=</td>
+                        <td>x *= 3</td>
+                        <td>x = x * 3</td>
+                    </tr>
+                    <tr>
+                        <td>/= </td>
+                        <td>x /= 3</td>
+                        <td>x = x / 3</td>
+                    </tr>
+                    <tr>
+                        <td>%=</td>
+                        <td>x %= 3</td>
+                        <td>x = x % 3</td>
+                    </tr>
+                    <tr>
+                        <td>//=</td>
+                        <td>x //= 3</td>
+                        <td>x = x // 3</td>
+                    </tr>
+                    <tr>
+                        <td>**=</td>
+                        <td>x **= 3 </td>
+                        <td>x = x ** 3</td>
+                    </tr>
+                    <tr>
+                        <td>&=</td>
+                        <td>x &= 3</td>
+                        <td>x = x & 3</td>
+                    </tr>
+                    <tr>
+                        <td>|= </td>
+                        <td>x |= 3</td>
+                        <td>x = x | 3</td>
+                    </tr>
+                    <tr>  
+                        <td>^=</td>
+                        <td>x ^= 3</td>
+                        <td>x = x ^ 3</td>
+                    </tr>
+                    <tr>
+                        <td>>>= </td>
+                        <td>x >>= 3</td>
+                        <td>x = x >> 3</td>
+                    </tr>
+                    <tr>
+                        <td> <<= </td>
+                        <td>x <<= 3</td>
+                        <td>x = x << 3</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>
+                Python Салыстыру операторлары
+            </h2>
+            <p>
+                Бұл операторлар екі мәнді салыстыру үшін қолданылады:
+            </p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Оператор</th>
+                        <th>Атауы</th>
+                        <th>Мысалы</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td>== </td>
+                        <td>Тең</td>
+                        <td>x == y</td>
+                    </tr>
+                    <tr>
+                        <td>!=</td>
+                        <td>Тең емес</td>
+                        <td>x != y</td>
+                    </tr>
+                    <tr>
+                        <td>></td>
+                        <td>Үлкен</td>
+                        <td>x > y</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            << </td>
+                        <td>Кіші</td>
+                        <td>x < y</td>
+                    </tr>
+                    <tr>
+                        <td>>=</td>
+                        <td>Үлкен немесе тең</td>
+                        <td>x >= y</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <= </td>
+                        <td>Кіші немесе тең</td>
+                        <td>x <= y</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>
+                Python Логикалық операторлары
+            </h2>
+            <p>
+                Логикалық операторлар шарттарды біріктіру үшін қолданылады:
+            </p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Оператор</th>
+                        <th>Сипаттамасы</th>
+                        <th>Мысалы</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> and</td>
+                        <td>Екі шарт та орындалса, True қайтарады</td>
+                        <td>x < 5 and x < 10</td>
+                    </tr>
+                    <tr>
+                        <td>or</td>
+                        <td>Бір шарт орындалса, True қайтарады</td>
+                        <td>x < 5 or x < 4</td>
+                    </tr>
+                    <tr>
+                        <td>not</td>
+                        <td>Шартты терістейді, False қайтарады, егер True болса</td>
+                        <td>not(x < 5 and x < 10)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>
+                Python Идентификация операторлары
+            </h2>
+            <p>
+                Бұл операторлар объектілердің бірдей жад орнында орналасқанын тексеру үшін қолданылады:
+
+            </p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Оператор</th>
+                        <th>Сипаттамасы</th>
+                        <th>Мысалы</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>is </td>
+                        <td>Егер екі айнымалы бірдей объект болса, True қайтарады</td>
+                        <td>x is y</td>
+                    </tr>
+                    <tr>
+                        <td>is not</td>
+                        <td>Егер екі айнымалы әртүрлі объект болса, True қайтарады</td>
+                        <td>x is not y</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>
+                Python Тиістілік операторлары
+            </h2>
+            <p>
+                Бұл операторлар тізбектің объект ішінде бар-жоғын тексеру үшін қолданылады:
+
+            </p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Оператор</th>
+                        <th>Сипаттамасы</th>
+                        <th>Мысалы</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> in</td>
+                        <td>Егер объект ішінде тізбек болса, True қайтарады</td>
+                        <td>x in y</td>
+                    </tr>
+                    <tr>
+                        <td>not in</td>
+                        <td>Егер объект ішінде тізбек болмаса, True қайтарады</td>
+                        <td>x not in y</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>
+                Python Биттік операторлары
+            </h2>
+            <p>
+                Бұл операторлар екілік сандарды бит бойынша салыстыру үшін қолданылады:
+            </p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Оператор</th>
+                        <th>Атауы</th>
+                        <th>Сипаттамасы</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>& </td>
+                        <td>AND</td>
+                        <td>Егер екі бит те 1 болса, 1 қайтарады</td>
+                    </tr>
+                    <tr>
+                        <td>|</td>
+                        <td>OR</td>
+                        <td>Егер екі биттің біреуі 1 болса, 1 қайтарады</td>
+                    </tr>
+                    <tr>
+                        <td>^</td>
+                        <td>XOR</td>
+                        <td>Егер тек бір бит 1 болса, 1 қайтарады</td>
+                    </tr>
+                    <tr>
+                        <td>~</td>
+                        <td>NOT</td>
+                        <td>Барлық биттерді инверттейді</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            << </td>
+                        <td>Солға жылжу</td>
+                        <td>Биттерді солға жылжытып, нөлдерді қосады</td>
+                    </tr>
+                    <tr>
+                        <td>>></td>
+                        <td>Оңға жылжу</td>
+                        <td>Биттерді оңға жылжытып, сол жақтағы биттерді көшіріп қосады</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+
+</html>

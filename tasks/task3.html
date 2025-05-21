@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практикалық тапсырмалар</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <h1>Жолдар</h1>
+    </header>
+    <main>
+        <button onclick="window.close()">Артқа</button>
+        <section>
+            <h2>1-Тапсырма:  </h2>
+            <p> 
+                Жол ұзындығын шығару үшін len әдісін қолданыңыз.<br>
+                <em>
+               x = "hello" print() 
+            </em></p>
+            <div class="hint" id="hint1" style="display: none;">
+                <strong>Кеңес:</strong>  <code> 
+                    len(x)</code> қолданыңыз.
+            </div>
+            <textarea id="code1" rows="4" cols="50" placeholder="Кодты осында енгізіңіз..."></textarea><br>
+            <button type="button" id="check1">Тексеру</button>
+            <div id="result1" style="display: none;"></div>
+        </section>
+
+        <section>
+            <h2>2-Тапсырма:</h2>
+            <p>
+                Txt жолының бірінші таңбасын алыңыз.
+ <br>
+<i>txt = "hello" x = </i>
+            </p>
+            <div class="hint" id="hint2" style="display: none;">
+                <strong>Кеңес:</strong> <code>txt[0]</code> көмегімен жүзеге асырылады .
+            </div>
+            <textarea id="code2" rows="4" cols="50" placeholder="Кодты осында енгізіңіз..."></textarea><br>
+            <button type="button" id="check2">Тексеру</button>
+            <div id="result2" style="display: none;"></div>
+        </section>
+
+        <section>
+            <h2>3-Тапсырма:</h2>
+            <p>
+                3-индекстен 5-индекс таңбаларды алыңыз.<i>txt = "hello" x = </i>
+            </p>
+            <div class="hint" id="hint3" style="display: none;">
+                <strong>Кеңес:</strong>  <code>txt[3:6]</code> қолданыңыз .
+            </div>
+            <textarea id="code3" rows="4" cols="50" placeholder="Кодты осында енгізіңіз..."></textarea><br>
+            <button type="button" id="check3">Тексеру</button>
+            <div id="result3" style="display: none;"></div>
+        </section>
+
+        <section>
+            <h2>4-Тапсырма:</h2>
+            <p>
+                Жолды басында немесе соңында бос орынсыз қайтарады.<i>txt = "hello" x =  </i>
+            </p>
+            <div class="hint" id="hint4" style="display: none;">
+                <strong>Кеңес:</strong>  <code>txt.strip()</code> қолданыңыз .
+            </div>
+            <textarea id="code4" rows="4" cols="50" placeholder="Кодты осында енгізіңіз..."></textarea><br>
+            <button type="button" id="check4">Тексеру</button>
+            <div id="result4" style="display: none;"></div>
+        </section>
+
+        <section>
+            <h2>5-Тапсырма:</h2>
+            <p>
+Txt мәнін бас әріпке түрлендіріңіз.               
+                <i> txt = "hello" txt =
+                     </i>
+            </p>
+            <div class="hint" id="hint5" style="display: none;">
+                <strong>Кеңес:</strong>  <code>txt.upper()</code> қолданыңыз .
+            </div>
+            <textarea id="code5" rows="4" cols="50" placeholder="Кодты осында енгізіңіз..."></textarea><br>
+            <button type="button" id="check5">Тексеру</button>
+            <div id="result5" style="display: none;"></div>
+        </section>
+    </main>
+
+    <script>
+        // 1-тапсырманы тексеру
+        document.getElementById('check1').addEventListener('click', function () {
+            const userCode = document.getElementById('code1').value.trim();
+            const result = document.getElementById('result1');
+            const hint = document.getElementById('hint1');
+            
+            if (userCode === 'x ="hello"print(len(x))') {
+                result.textContent = 'Тапсырма орындалды!';
+                result.style.color = 'green';
+            } else {
+                result.textContent = 'Қате! бос орынсыз жазыңыз';
+                result.style.color = 'red';
+                hint.style.display = 'block';
+            }
+            result.style.display = 'block';
+        });
+
+        // 2-тапсырманы тексеру
+        document.getElementById('check2').addEventListener('click', function () {
+            const userCode = document.getElementById('code2').value.trim();
+            const result = document.getElementById('result2');
+            const hint = document.getElementById('hint2');
+            
+            if (userCode === 'txt="hello"x=txt[0]') {
+                result.textContent = 'Тапсырма орындалды!';
+                result.style.color = 'green';
+            } else {
+                result.textContent = 'Қате!бос орынсыз жазыңыз ';
+                result.style.color = 'red';
+                hint.style.display = 'block';
+            }
+            result.style.display = 'block';
+        });
+
+        // 3-тапсырманы тексеру
+        document.getElementById('check3').addEventListener('click', function () {
+            const userCode = document.getElementById('code3').value.trim();
+            const result = document.getElementById('result3');
+            const hint = document.getElementById('hint3');
+            
+            if (userCode === 'txt="hello"x=txt.strip()') {
+                result.textContent = 'Тапсырма орындалды!';
+                result.style.color = 'green';
+            } else {
+                result.textContent = 'Қате!бос орынсыз жазыңыз ';
+                result.style.color = 'red';
+                hint.style.display = 'block';
+            }
+            result.style.display = 'block';
+        });
+
+          // 4-тапсырманы тексеру
+          document.getElementById('check4').addEventListener('click', function () {
+            const userCode = document.getElementById('code4').value.trim();
+            const result = document.getElementById('result4');
+            const hint = document.getElementById('hint4');
+            
+            if (userCode === 'txt="hello"x=txt.strip()') {
+                result.textContent = 'Тапсырма орындалды!';
+                result.style.color = 'green';
+            } else {
+                result.textContent = 'Қате! бос орынсыз жазыңыз';
+                result.style.color = 'red';
+                hint.style.display = 'block';
+            }
+            result.style.display = 'block';
+        });
+
+          // 5-тапсырманы тексеру
+          document.getElementById('check5').addEventListener('click', function () {
+            const userCode = document.getElementById('code5').value.trim();
+            const result = document.getElementById('result5');
+            const hint = document.getElementById('hint5');
+            
+            if (userCode === 'txt="hello"txt=txt.upper()') {
+                result.textContent = 'Тапсырма орындалды!';
+                result.style.color = 'green';
+            } else {
+                result.textContent = 'Қате!бос орынсыз жазыңыз ';
+                result.style.color = 'red';
+                hint.style.display = 'block';
+            }
+            result.style.display = 'block';
+        });
+    </script>
+    
+</body>
+</html>

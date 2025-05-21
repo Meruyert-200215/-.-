@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python тестілері</title>
+    <link rel="stylesheet" href="../style.css">
+    
+</head>
+<body>
+    <header>
+        <h1>3 - Python тестілері</h1>
+    </header>
+    <main>
+        <button onclick="window.close()">Артқа</button>
+        <form id="quiz-form">
+            <section>
+                <h2>Сұрақ 1</h2>
+                <p> Айнымалы нені сақтайды? </p>
+                <input type="radio" id="q2-a1" name="q1" value="wrong">
+                <label for="q1-a1">атауы</label><br>
+                <input type="radio" id="q2-a2" name="q1" value="correct">
+                <label for="q1-a2"> мәні</label><br>
+                <input type="radio" id="q2-a3" name="q1" value="wrong">
+                <label for="q1-a3">типі</label><br>
+                <input type="radio" id="q2-a3" name="q1" value="wrong">
+                <label for="q1-a3">өзінің мәнінің ұзындығы</label>
+            </section>
+            <section>
+                <h2>Сұрақ 2</h2>
+                <p>Float деректер түрі нені білдіреді?</p>
+                <input type="radio" id="q2-a1" name="q2" value="correct">
+                <label for="q2-a1">нақты сан</label><br>
+                <input type="radio" id="q2-a2" name="q2" value="wrong">
+                <label for="q2-a2">бүтін сан</label><br>
+                <input type="radio" id="q2-a3" name="q2" value="wrong">
+                <label for="q2-a3">мәтін </label><br>
+                <input type="radio" id="q2-a3" name="q2" value="wrong">
+                <label for="q2-a3">логикалық </label>
+            </section>
+            <section>
+                <h2>Сұрақ 3</h2>
+                <p>
+                    Теңестіру операторын дұрыс жазыңыз:
+                </p>
+                <input type="radio" id="q3-a1" name="q3" value="wrong">
+                <label for="q3-a1">
+                    15=a          
+                </label><br>
+                <input type="radio" id="q3-a2" name="q3" value="wrong">
+                <label for="q3-a2">
+                    x=0.9
+                </label><br>
+                <input type="radio" id="q3-a2" name="q3" value="wrong">
+                <label for="q3-a2">
+                    х=45
+                </label><br>
+                <input type="radio" id="q3-a3" name="q3" value="correct">
+                <label for="q3-a3">
+                    а=5
+                </label>
+            </section><section>
+                <h2>Сұрақ 4</h2>
+                <p>
+                    Енгізу операторы қалай жазылады?
+                </p>
+                <input type="radio" id="q4-a1" name="q4" value="wrong">
+                <label for="q4-a1">
+                    print ( )
+                </label><br>
+                <input type="radio" id="q4-a2" name="q4" value="correct">
+                <label for="q4-a2">
+                    intput ( )               
+                </label><br>
+                <input type="radio" id="q4-a3" name="q4" value="wrong">
+                <label for="q4-a3">                  
+                    int ( )
+                </label><br>
+                <input type="radio" id="q4-a3" name="q4" value="wrong">
+                <label for="q4-a3">
+                    random ( )
+                </label>
+            </section>
+            <section>
+                <h2>Сұрақ 5</h2>
+                <p>
+                    bool типіндегі айнымалының қанша мүмкін мәні бар?
+                </p>
+                <input type="radio" id="q5-a1" name="q5" value="correct">
+                <label for="q5-a1">
+                    2
+                  </label><br>
+                <input type="radio" id="q5-a2" name="q5" value="wrong">
+                <label for="q5-a2">
+                    4
+                </label><br>
+                <input type="radio" id="q5-a3" name="q5" value="wrong">
+                <label for="q5-a3">
+                   8  
+                </label><br>
+                <input type="radio" id="q5-a3" name="q5" value="wrong">
+                <label for="q5-a3">
+                 Шексіз   
+                </label>
+            </section>
+            <section>
+                <h2>Сұрақ 6</h2>
+                <p>
+                    Төменде қандай оператор қолданылады? <br>
+                     <pre><code>
+if n < 100:
+ b = n + a</code></pre>
+                </p>
+                <input type="radio" id="q6-a1" name="q6" value="wrong">
+                <label for="q6-a1">
+                    Тапсыру операторы
+                 </label><br>
+                <input type="radio" id="q6-a2" name="q6" value="correct">
+                <label for="q6-a2">
+                    Шартты оператор
+
+                </label><br>
+                <input type="radio" id="q6-a3" name="q6" value="wrong">
+                <label for="q6-a3">
+                    Енгізу операторы
+                </label><br>
+                <input type="radio" id="q6-a3" name="q6" value="wrong">
+                <label for="q6-a3">
+                     Көбейту операторы
+                </label>
+            </section><section>
+                <h2>Сұрақ 7</h2>
+                <p>
+                    <pre><code>
+a = 345
+print(a // 100)
+                    </code></pre> <br>  командасы не шығарады?
+                </p>
+                <input type="radio" id="q7-a1" name="q7" value="wrong">
+                <label for="q7-a1">
+                    2
+                </label><br>
+                <input type="radio" id="q7-a2" name="q7" value="correct">
+                <label for="q7-a2">
+                    3
+                </label><br>
+                <input type="radio" id="q7-a3" name="q7" value="wrong">
+                <label for="72-a3">
+                    3410
+                </label>
+            </section><section>
+                <h2>Сұрақ 8</h2>
+                <p>
+                    Берілген бағдарлама: <pre><code>a, b, c = map(int, input().split())
+                       <br> s = a + b * c
+                      <br>  print(s)
+                         </code></pre>Егер пернетақтадан 4, 12 және 2 сандары енгізілсе, бағдарлама не шығарады?
+                </p>
+                <input type="radio" id="q8-a1" name="q8" value="wrong">
+                <label for="q8-a1">
+210
+                </label><br>
+                <input type="radio" id="q8-a2" name="q8" value="correct">
+                <label for="q8-a2">
+28
+                </label><br>
+                <input type="radio" id="q8-a3" name="q8" value="wrong">
+                <label for="q8-a3">
+                    0
+                </label>
+            </section><section>
+                <h2>Сұрақ 9</h2>
+                <p>
+                    Қай жолда қате жіберілген?<br>
+                   
+                     1. a = int(input)<br>
+                      2.if a > 0: <br>
+                      3.print(a):<br>
+                     4.  else:<br>
+                   5. print(A)  <br>
+                   
+                </p>
+                <input type="radio" id="q9-a1" name="q9" value="wrong">
+                <label for="q9-a1">
+234
+                </label><br>
+                <input type="radio" id="q9-a2" name="q9" value="correct">
+                <label for="q9-a2">
+135
+                </label><br>
+                <input type="radio" id="q9-a3" name="q9" value="wrong">
+                <label for="q9-a3">
+                    145
+                </label>
+            </section><section>
+                <h2>Сұрақ 10</h2>
+                <p>Автомат төрт таңбалы санды енгізеді. Осы сан бойынша жаңа сан келесі ережелерге сай құрылады:
+
+<br> 1. Бірінші және үшінші, екінші және төртінші цифрлар қосылады.
+<br> 2. Алынған екі сан кему ретімен қатарынан жазылады (бөлгішсіз). <br>
+Автомат 175 санын шығаратын ең кіші санды табыңыз.
+                </p>
+                <input type="radio" id="q10-a1" name="q10" value="wrong">
+                <label for="q10-a1">
+542
+                </label><br>
+                <input type="radio" id="q10-a2" name="q10" value="correct">
+                <label for="q10-a2">
+1849
+                </label><br>
+                <input type="radio" id="q10-a3" name="q10" value="wrong">
+                <label for="q10-a3">
+                    0
+                </label>
+            </section><section>
+                <h2>Сұрақ 11</h2>
+                <p>
+                    Автомат төрт таңбалы санды енгізеді. Осы сан бойынша жаңа сан келесі ережелерге сай құрылады:
+
+                    <br>1. Бірінші және үшінші, екінші және төртінші цифрлар көбейтіледі.
+                    <br>2. Алынған екі сан өсу ретімен қатарынан жазылады (бөлгішсіз).
+                    <br>Автомат 925 санын шығаратын ең үлкен санды табыңыз.
+                </p>
+                <input type="radio" id="q11-a1" name="q11" value="wrong">
+                <label for="q11-a1">
+1496
+                </label><br>
+                <input type="radio" id="q11-a2" name="q11" value="correct">
+                <label for="q11-a2">
+2515
+                </label><br>
+                <input type="radio" id="q11-a3" name="q11" value="wrong">
+                <label for="q11-a3">
+                    574
+                </label>
+            </section><section>
+                <h2>Сұрақ 12</h2>
+                <p>
+                    Келесі бағдарламаны орындағаннан кейін не шығады? <pre><code>
+a = 26
+b = 7
+b = a // b
+c = a % b
+print(c)
+                        </code></pre>
+                </p>
+                <input type="radio" id="q12-a1" name="q12" value="wrong">
+                <label for="q12-a1">
+5
+                </label><br>
+                <input type="radio" id="q12-a2" name="q12" value="correct">
+                <label for="q12-a2">
+2
+                </label><br>
+                <input type="radio" id="q12-a3" name="q12" value="wrong">
+                <label for="q12-a3">
+                    6
+                </label>
+            </section>
+            <button type="button" id="submit-quiz">Жауаптарды тексеру</button>
+            <button type="button" id="reset-quiz" class="hidden">Тестті қайтадан тапсыру</button>
+        </form>
+
+        <div id="quiz-results" class="hidden">
+            <h2>Нәтиже:</h2>
+            <p id="score"></p>
+            <p id="incorrect-answers"></p>
+        </div>
+    </main>
+
+    <script>
+        document.getElementById('submit-quiz').addEventListener('click', function () {
+            const questions = document.querySelectorAll('form section');
+            let score = 0;
+            let incorrectAnswers = [];
+
+            questions.forEach((section, index) => {
+                const questionNumber = index + 1;
+                const selected = section.querySelector('input[name="q' + questionNumber + '"]:checked');
+
+                if (selected) {
+                    if (selected.value === 'correct') {
+                        score++;
+                    } else {
+                        incorrectAnswers.push(`Сұрақ ${questionNumber}`);
+                    }
+                } else {
+                    incorrectAnswers.push(`Сұрақ ${questionNumber} (жауап жоқ)`);
+                }
+            });
+
+            document.getElementById('score').textContent = `Сіз ${questions.length} сұрақтың ${score} дұрыс жауап бердіңіз.`;
+            document.getElementById('incorrect-answers').textContent = incorrectAnswers.length 
+                ? `Қателер: ${incorrectAnswers.join(', ')}.` 
+                : 'Сіз барлық сұрақтарға дұрыс жауап бердіңіз!';
+
+            document.getElementById('quiz-results').classList.remove('hidden');
+
+           // Тексеруден кейін радио түймелерін құлыптау
+            const inputs = document.querySelectorAll('input[type="radio"]');
+            inputs.forEach(input => {
+                input.disabled = true;
+            });
+
+         // Тестті қайта тапсыру үшін түймені көрсету
+            document.getElementById('reset-quiz').classList.remove('hidden');
+        });
+
+        // Тестті қалпына келтіру
+        document.getElementById('reset-quiz').addEventListener('click', function () {
+           // Барлық радио түймелерін қалпына келтіру
+            const inputs = document.querySelectorAll('input[type="radio"]');
+            inputs.forEach(input => {
+                input.checked = false;
+                input.disabled = false;
+            });
+
+            // Нәтижелерді және қайта өту түймесін жасыру
+            document.getElementById('quiz-results').classList.add('hidden');
+            document.getElementById('reset-quiz').classList.add('hidden');
+        });
+    </script>
+    
+</body>
+</html>

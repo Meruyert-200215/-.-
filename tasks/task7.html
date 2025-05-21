@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практикалық тапсырмалар</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <h1>Цикл While and for  </h1>
+    </header>
+    <main>
+        <button onclick="window.close()">Артқа</button>
+        <section>
+            <h2>1-Тапсырма:  </h2>
+            <p> 
+                i 6-дан аз болғанша i шығарамыз.<br>
+                <em>i = 1   i < 6  print(i) i += 1
+            </em></p>
+            <div class="hint" id="hint1" style="display: none;">
+                <strong>Кеңес:</strong>  <code> 
+                    while  </code> қолданыңыз.
+            </div>
+            <textarea id="code1" rows="4" cols="50" placeholder="Кодты осында енгізіңіз..."></textarea><br>
+            <button type="button" id="check1">Тексеру</button>
+            <div id="result1" style="display: none;"></div>
+        </section>
+
+        <section>
+            <h2>2-Тапсырма:</h2>
+            <p>
+                Егер i 3-ке тең болса, циклды тоқтатыңыз.
+ <br>
+<i>i = 1 while i < 6: if i == 3:   i += 1 </i>
+            </p>
+            <div class="hint" id="hint2" style="display: none;">
+                <strong>Кеңес:</strong> <code>break</code> көмегімен жүзеге асырылады .
+            </div>
+            <textarea id="code2" rows="4" cols="50" placeholder="Кодты осында енгізіңіз..."></textarea><br>
+            <button type="button" id="check2">Тексеру</button>
+            <div id="result2" style="display: none;"></div>
+        </section>
+
+        <section>
+            <h2>3-Тапсырма:</h2>
+            <p>
+                6 элемент кодын теру циклін орындау үшін range функциясын пайдаланыңыз.
+                <i>for x in  : print(x) </i>
+            </p>
+            <div class="hint" id="hint3" style="display: none;">
+                <strong>Кеңес:</strong>  <code>range(6)</code> қолданыңыз .
+            </div>
+            <textarea id="code3" rows="4" cols="50" placeholder="Кодты осында енгізіңіз..."></textarea><br>
+            <button type="button" id="check3">Тексеру</button>
+            <div id="result3" style="display: none;"></div>
+        </section>
+
+        <section>
+            <h2>4-Тапсырма:</h2>
+            <p>
+                X "бананға"тең болған кезде циклден шығыңыз.
+                <i>fruits = ["алма", "банан", "шие"] for X in fruits: if x = = "банан":   </i>
+            </p>
+            <div class="hint" id="hint4" style="display: none;">
+                <strong>Кеңес:</strong>  <code>break</code> қолданыңыз .
+            </div>
+            <textarea id="code4" rows="4" cols="50" placeholder="Кодты осында енгізіңіз..."></textarea><br>
+            <button type="button" id="check4">Тексеру</button>
+            <div id="result4" style="display: none;"></div>
+        </section>
+
+      
+    </main>
+
+    <script>
+        // 1-тапсырманы тексеру
+        document.getElementById('check1').addEventListener('click', function () {
+            const userCode = document.getElementById('code1').value.trim();
+            const result = document.getElementById('result1');
+            const hint = document.getElementById('hint1');
+            
+            if (userCode === 'i = 1 while i < 6 : print(i) i += 1') {
+                result.textContent = 'Тапсырма орындалды!';
+                result.style.color = 'green';
+            } else {
+                result.textContent = 'Қате! ';
+                result.style.color = 'red';
+                hint.style.display = 'block';
+            }
+            result.style.display = 'block';
+        });
+
+        // 2-тапсырманы тексеру
+        document.getElementById('check2').addEventListener('click', function () {
+            const userCode = document.getElementById('code2').value.trim();
+            const result = document.getElementById('result2');
+            const hint = document.getElementById('hint2');
+            
+            if (userCode === 'i = 1 while i < 6: if i == 3: break  i += 1 ') {
+                result.textContent = 'Тапсырма орындалды!';
+                result.style.color = 'green';
+            } else {
+                result.textContent = 'Қате! ';
+                result.style.color = 'red';
+                hint.style.display = 'block';
+            }
+            result.style.display = 'block';
+        });
+
+        // 3-тапсырманы тексеру
+        document.getElementById('check3').addEventListener('click', function () {
+            const userCode = document.getElementById('code3').value.trim();
+            const result = document.getElementById('result3');
+            const hint = document.getElementById('hint3');
+            
+            if (userCode === 'for x in range(6) : print(x) ') {
+                result.textContent = 'Тапсырма орындалды!';
+                result.style.color = 'green';
+            } else {
+                result.textContent = 'Қате! ';
+                result.style.color = 'red';
+                hint.style.display = 'block';
+            }
+            result.style.display = 'block';
+        });
+
+          // 4-тапсырманы тексеру
+          document.getElementById('check4').addEventListener('click', function () {
+            const userCode = document.getElementById('code4').value.trim();
+            const result = document.getElementById('result4');
+            const hint = document.getElementById('hint4');
+            
+            if (userCode === ' fruits = ["алма", "банан", "шие"] for X in fruits: if x = = "банан": break print(x)') {
+                result.textContent = 'Тапсырма орындалды!';
+                result.style.color = 'green';
+            } else {
+                result.textContent = 'Қате! ';
+                result.style.color = 'red';
+                hint.style.display = 'block';
+            }
+            result.style.display = 'block';
+        });
+
+    </script>
+    
+</body>
+</html>

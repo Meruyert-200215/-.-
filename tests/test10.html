@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python тестілері</title>
+    <link rel="stylesheet" href="../style.css">
+    
+</head>
+<body>
+    <header>
+        <h1>10 - while және for циклдарды</h1>
+    </header>
+    <main>
+        <button onclick="window.close()">Артқа</button>
+        <form id="quiz-form">
+            <section>
+                <h2>Сұрақ 1</h2>
+                <p>Қайсы операторлар Пайтонда циклдарды білдіреді?</p>
+                <input type="radio" id="q2-a1" name="q1" value="wrong">
+                <label for="q1-a1"> if</label><br>
+                <input type="radio" id="q2-a2" name="q1" value="correct">
+                <label for="q1-a2">while</label><br>
+                <input type="radio" id="q2-a3" name="q1" value="wrong">
+                <label for="q1-a3">switch</label>
+            </section>          
+            <section>
+                <h2>Сұрақ 2</h2>
+                <p>Қайсы нұсқаны шексіз цикл ұйымдастыру үшін қолдануға болады?</p>
+                <input type="radio" id="q2-a1" name="q2" value="correct">
+                <label for="q2-a1">барлық жоғарыда айтылғандар</label><br>
+                <input type="radio" id="q2-a2" name="q2" value="wrong">
+                <label for="q2-a2">while True:</label><br>
+                <input type="radio" id="q2-a3" name="q2" value="wrong">
+                <label for="q2-a3">while 1:</label><br>
+                <input type="radio" id="q2-a4" name="q2" value="wrong">
+                <label for="q2-a4">for i in range(inf):  
+                </label>
+            </section>
+            
+            <section>
+                <h2>Сұрақ 3</h2>
+                <p>
+                    Кодты орындау нәтижесінде экранға не шығады?    <p>
+                        Шарт:
+                    </p><pre><code>
+for i in (3):
+print(i, end=' ')                      
+                    </code></pre>
+                </p>
+                <input type="radio" id="q3-a1" name="q3" value="wrong">
+                <label for="q3-a1">
+                    63          
+                </label><br>
+                <input type="radio" id="q3-a2" name="q3" value="wrong">
+                <label for="q3-a2">
+                    (3)
+                </label><br>
+                <input type="radio" id="q3-a2" name="q3" value="wrong">
+                <label for="q3-a2">
+                    1 2 3  
+                </label><br>
+                <input type="radio" id="q3-a4" name="q3" value="correct">
+                <label for="q3-a4">
+                    қате
+                </label>
+            </section><section>
+                <h2>Сұрақ 4</h2>
+                <p>
+                    Кодты орындау нәтижесінде экранға не шығады?<p>
+                        Шарт:
+                    </p><pre><code>
+for i in range(3):
+print(-i, end=' ')
+                     
+                    </code></pre>
+                </p>
+                <input type="radio" id="q4-a1" name="q4" value="wrong">
+                <label for="q4-a1">
+                    -1 -2 -3
+                </label><br>
+                <input type="radio" id="q4-a2" name="q4" value="correct">
+                <label for="q4-a2">
+                    0 -1 -2 -3           
+                </label><br>
+                <input type="radio" id="q4-a3" name="q4" value="wrong">
+                <label for="q4-a3">                  
+                    0 -1 -2
+                </label><br>
+                <input type="radio" id="q4-a4" name="q4" value="wrong">
+                <label for="q4-a4">
+                   -1 2 -3
+                </label>
+            </section>
+            <section>
+                <h2>Сұрақ 5</h2>
+                <p>
+                    Кодты орындау нәтижесінде экранға не шығады? <p>
+                        Шарт:
+                    </p><pre><code>
+li = ['12345', 'abcdef']
+for elem in li[0]:
+print(elem, end=' ')
+                        
+                    </code></pre>
+                </p>
+                <input type="radio" id="q5-a1" name="q5" value="correct">
+                <label for="q5-a1">
+                    a b c d e f
+                  </label><br>
+                <input type="radio" id="q5-a2" name="q5" value="wrong">
+                <label for="q5-a2">
+                   0 1 2 3 4 5 
+                </label><br>
+                <input type="radio" id="q5-a3" name="q5" value="wrong">
+                <label for="q5-a3">
+                   1 2 3 4 5
+                </label><br>
+                <input type="radio" id="q5-a4" name="q5" value="wrong">
+                <label for="q5-a4">
+                    қате   
+                </label>
+            </section>
+            <section>
+                <h2>Сұрақ 6</h2>
+                <p>
+                    Қай оператор циклды тоқтату үшін қолданылады?
+                </p>
+                <input type="radio" id="q6-a1" name="q6" value="wrong">
+                <label for="q6-a1">
+                    continue
+                </label><br>
+                <input type="radio" id="q6-a2" name="q6" value="correct">
+                <label for="q6-a2">
+                    break
+                </label><br>
+                <input type="radio" id="q6-a3" name="q6" value="wrong">
+                <label for="q6-a3">
+                    else
+
+                </label><br>
+                <input type="radio" id="q6-a4" name="q6" value="wrong">
+                <label for="q6-a4">
+                    pass
+                </label>
+            </section>
+            
+            
+            <section>
+                <h2>Сұрақ 7</h2>
+                <p>
+                    Кодты орындау нәтижесінде экранға не шығады? <P>Шарт:
+                        <pre><code>
+d = [('a', 'b', 'c'), ('d', 'e', 'f')]
+for x, *y in d: 
+print(x, y, end=' ')
+                            
+                        </code></pre>
+                    </P>
+                </p>
+                <input type="radio" id="q7-a1" name="q7" value="wrong">
+                <label for="q7-a1">
+                    a (b, c) d (e, f)
+                </label><br>
+                <input type="radio" id="q7-a2" name="q7" value="correct">
+                <label for="q7-a2">
+                    a ['b', 'c'] d ['e', 'f']
+                </label><br>
+                <input type="radio" id="q7-a3" name="q7" value="wrong">
+                <label for="72-a3">
+                    a ('b', 'c') d ('e', 'f')  
+                </label>
+            </section><section>
+                <h2>Сұрақ 8</h2>
+                <p>Кодты орындау нәтижесінде экранға не шығады?
+                
+                <P>Шарт:
+                        <pre><code>
+k = 1
+while k <= 5:
+if k > 3: break            
+print(k, end=' ')               
+k += 1   
+                              
+                        </code></pre>
+                    </P>
+                </p>
+                <input type="radio" id="q8-a1" name="q8" value="wrong">
+                <label for="q8-a1">
+1 2 3 4 
+                </label><br>
+                <input type="radio" id="q8-a2" name="q8" value="correct">
+                <label for="q8-a2">
+1 2 3
+                </label><br>
+                <input type="radio" id="q8-a3" name="q8" value="wrong">
+                <label for="q8-a3">
+                    1 2 3 4 5
+                </label>
+            </section><section>
+                <h2>Сұрақ 9</h2>
+                <p>
+                    Кодты орындау нәтижесінде экранға не шығады?
+                    <p>
+                        Шарт:
+                    </p>
+                    <pre><code>
+                        k = 0
+                        while True:
+                            if k > 5: break            
+                            if k == 3: 
+                                k += 1
+                                continue 
+                            print(k, end=' ')               
+                            k += 1 
+                        
+                    </code></pre>
+                   
+                </p>
+                <input type="radio" id="q9-a1" name="q9" value="wrong">
+                <label for="q9-a1">
+0 1 2
+                </label><br>
+                <input type="radio" id="q9-a2" name="q9" value="correct">
+                <label for="q9-a2">
+0 1 2  4 5 
+                </label><br>
+                <input type="radio" id="q9-a3" name="q9" value="wrong">
+                <label for="q9-a3">
+                    0 1 2 3
+                </label>
+            </section><section>
+                <h2>Сұрақ 10</h2>
+                <p>
+
+                    Қай оператор цикл аяқталғаннан кейін код блогын орындау үшін қолданылады?
+                </p>
+                <input type="radio" id="q10-a1" name="q10" value="wrong">
+                <label for="q10-a1">
+                    continue
+                </label><br>
+                <input type="radio" id="q10-a2" name="q10" value="correct">
+                <label for="q10-a2">
+                    else
+                </label><br>
+                <input type="radio" id="q10-a3" name="q10" value="wrong">
+                <label for="q10-a3">
+                    pass
+                </label>
+            </section><section>
+                <h2>Сұрақ 11</h2>
+                <p>Кодты орындау нәтижесінде экранға не шығады?
+                    
+                    <p>
+                        Шарт:
+                    </p>
+                    <pre><code>
+k = 4
+while k:
+k -= 1           
+print(k, end=' ')               
+if k > 2: continue
+   else:
+print(0)
+                         
+                    </code></pre>
+                </p>
+                <input type="radio" id="q11-a1" name="q11" value="wrong">
+                <label for="q11-a1">
+2 1 0
+                </label><br>
+                <input type="radio" id="q11-a2" name="q11" value="correct">
+                <label for="q11-a2">
+                    3 2 1 0
+                </label><br>
+                <input type="radio" id="q11-a3" name="q11" value="wrong">
+                <label for="q11-a3">
+                    2 3 1 0 0
+                </label>
+            </section>
+            
+            <section>
+                <h2>Сұрақ 12</h2>
+                <p>
+                    Кодты орындау нәтижесінде экранға не шығады?
+                    <p>
+                        Шарт:
+                    </p>
+                    <pre><code>
+k = 1
+while True:
+    for n in range(2, 0, -1):
+        print(n, end=' ')
+    k += 1                         
+    if k == 3: break 
+
+                    </code></pre>
+                </p>
+                <input type="radio" id="q12-a1" name="q12" value="wrong">
+                <label for="q12-a1">
+2 1 2 1
+                </label><br>
+                <input type="radio" id="q12-a2" name="q12" value="correct">
+                <label for="q12-a2">
+                    2 1 2 1 2 1
+                </label><br>
+                <input type="radio" id="q12-a3" name="q12" value="wrong">
+                <label for="q12-a3">
+                    ештеңе
+                </label>
+            </section>
+            <button type="button" id="submit-quiz">Жауаптарды тексеру</button>
+            <button type="button" id="reset-quiz" class="hidden">Тестті қайтадан тапсыру</button>
+        </form>
+
+        <div id="quiz-results" class="hidden">
+            <h2>Нәтиже:</h2>
+            <p id="score"></p>
+            <p id="incorrect-answers"></p>
+        </div>
+    </main>
+
+    <script>
+        document.getElementById('submit-quiz').addEventListener('click', function () {
+            const questions = document.querySelectorAll('form section');
+            let score = 0;
+            let incorrectAnswers = [];
+
+            questions.forEach((section, index) => {
+                const questionNumber = index + 1;
+                const selected = section.querySelector('input[name="q' + questionNumber + '"]:checked');
+
+                if (selected) {
+                    if (selected.value === 'correct') {
+                        score++;
+                    } else {
+                        incorrectAnswers.push(`Сұрақ ${questionNumber}`);
+                    }
+                } else {
+                    incorrectAnswers.push(`Сұрақ ${questionNumber} (жауап жоқ)`);
+                }
+            });
+
+            document.getElementById('score').textContent = `Сіз ${questions.length} сұрақтың ${score} дұрыс жауап бердіңіз.`;
+            document.getElementById('incorrect-answers').textContent = incorrectAnswers.length 
+                ? `Қателер: ${incorrectAnswers.join(', ')}.` 
+                : 'Сіз барлық сұрақтарға дұрыс жауап бердіңіз!';
+
+            document.getElementById('quiz-results').classList.remove('hidden');
+
+           // Тексеруден кейін радио түймелерін құлыптау
+            const inputs = document.querySelectorAll('input[type="radio"]');
+            inputs.forEach(input => {
+                input.disabled = true;
+            });
+
+         // Тестті қайта тапсыру үшін түймені көрсету
+            document.getElementById('reset-quiz').classList.remove('hidden');
+        });
+
+        // Тестті қалпына келтіру
+        document.getElementById('reset-quiz').addEventListener('click', function () {
+           // Барлық радио түймелерін қалпына келтіру
+            const inputs = document.querySelectorAll('input[type="radio"]');
+            inputs.forEach(input => {
+                input.checked = false;
+                input.disabled = false;
+            });
+
+            // Нәтижелерді және қайта өту түймесін жасыру
+            document.getElementById('quiz-results').classList.add('hidden');
+            document.getElementById('reset-quiz').classList.add('hidden');
+        });
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,177 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+/* Кнопки для тестов и практик, чтобы они выглядели как кнопки лекций */
+button, a {
+    background-color: #4caf50; /* Цвет фона */
+    color: white; /* Цвет текста */
+    border: none; /* Без границы */
+    padding: 10px 20px; /* Отступы внутри кнопки */
+    font-size: 16px; /* Размер шрифта */
+    cursor: pointer; /* Курсор при наведении */
+    border-radius: 5px; /* Скругленные углы */
+    display: inline-block; /* Чтобы они располагались в одной строке */
+    text-decoration: none; /* Убираем подчеркивание у ссылок */
+    margin: 5px 0; /* Отступы между кнопками */
+    transition: background-color 0.3s; /* Плавный переход при наведении */
+}
+
+button:hover, a:hover {
+    background-color: #45a049; /* Цвет фона при наведении */
+}
+
+/* Для ссылок (которые открывают тесты и практические задания) */
+a {
+    display: block; /* Ссылки теперь ведут себя как блоки */
+    padding: 10px 20px; /* Такие же отступы, как у кнопок */
+    background-color: #4caf50; /* Цвет фона для ссылок */
+    color: white; /* Цвет текста */
+    text-decoration: none; /* Убираем подчеркивание */
+    font-size: 16px; /* Размер шрифта */
+    margin: 5px 0; /* Отступы */
+    border-radius: 5px; /* Скругленные углы */
+    transition: background-color 0.3s; /* Плавный переход при наведении */
+}
+
+a:hover {
+    background-color: #45a049; /* Цвет фона при наведении */
+}
+
+/* Формула және код */
+pre {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-left: 3px solid #0073e6;
+    overflow-x: auto;
+    font-size: 15px;
+}
+
+/* фото */
+img {
+    display: block;
+    margin: 10px auto;
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+
+/* Негізгі контейнер */
+main {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Сұрақтар */
+p {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Радио-батырма */
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+/*  "Дұрыс жауап" батырмасы */
+button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Нәтиже */
+#quiz-results {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff3cd;
+    border-left: 5px solid #ffecb5;
+    border-radius: 5px;
+}
+
+/* Заголовок */
+header {
+    background-color: #ff9800;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+/* Секции */
+section {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #fdf8f3;
+    border: 1px solid #ffd5b5;
+    border-radius: 5px;
+}
+
+/* Заголовки в секциях */
+h2 {
+    color: #ff9800;
+}
+
+/* Подсказки */
+.hint {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #fff3e0;
+    border-left: 5px solid #ffcc80;
+    border-radius: 5px;
+    font-style: italic;
+}
+/*таблица*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    text-align: left;
+}
+
+thead {
+    background-color: #f2f2f2;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+    text-transform: uppercase;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+td {
+    vertical-align: top;
+}

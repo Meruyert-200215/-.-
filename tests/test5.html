@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python тестілері</title>
+    <link rel="stylesheet" href="../style.css">
+    
+</head>
+<body>
+    <header>
+        <h1>5 - сандар</h1>
+    </header>
+    <main>
+        <button onclick="window.close()">Артқа</button>
+        <form id="quiz-form">
+            <section>
+                <h2>Сұрақ 1</h2>
+                <p>Python тілінде бүтін сандарды көрсететін деректер типі қандай?</p>
+                <input type="radio" id="q2-a1" name="q1" value="wrong">
+                <label for="q1-a1"> complex</label><br>
+                <input type="radio" id="q2-a2" name="q1" value="correct">
+                <label for="q1-a2">int</label><br>
+                <input type="radio" id="q2-a3" name="q1" value="wrong">
+                <label for="q1-a3">float</label><br>
+                <input type="radio" id="q2-a3" name="q1" value="wrong">
+                <label for="q1-a3">bool</label>
+            </section><section>
+                <h2>Сұрақ 2</h2>
+                <p>Қайсысы ұсынылған сандық литералдар float типіне жатады?</p>
+                <input type="radio" id="q2-a1" name="q2" value="correct">
+                <label for="q2-a1">5.0</label><br>
+                <input type="radio" id="q2-a2" name="q2" value="wrong">
+                <label for="q2-a2"> 1.7+4.3j</label><br>
+                <input type="radio" id="q2-a3" name="q2" value="wrong">
+                <label for="q2-a3">88</label><br>
+                <input type="radio" id="q2-a3" name="q2" value="wrong">
+                <label for="q2-a3">-0.4</label>
+            </section>
+            <section>
+                <h2>Сұрақ 3</h2>
+                <p>
+                    Кодты орындағаннан кейін экранға не шығады?<br><p>Шарт </p><pre><code>
+x = 5
+y = 2
+z = x//y
+print(z)
+
+                    </code></pre>
+                </p>
+                <input type="radio" id="q3-a1" name="q3" value="wrong">
+                <label for="q3-a1">
+                    2.5
+                </label><br>
+                <input type="radio" id="q3-a2" name="q3" value="wrong">
+                <label for="q3-a2">
+                    қате
+                </label><br>
+                <input type="radio" id="q3-a2" name="q3" value="wrong">
+                <label for="q3-a2">
+                     3
+                </label><br>
+                <input type="radio" id="q3-a3" name="q3" value="correct">
+                <label for="q3-a3">
+                    2
+                </label>
+            </section><section>
+                <h2>Сұрақ 4</h2>
+                <p><pre><code>
+print(4 + 3.0)
+                </code></pre>
+                    командасын орындағаннан кейін экранға не шығады?
+                </p>
+                <input type="radio" id="q4-a1" name="q4" value="wrong">
+                <label for="q4-a1">
+                    ) 4 + 3.0
+                </label><br>
+                <input type="radio" id="q4-a2" name="q4" value="correct">
+                <label for="q4-a2">
+                    7.0  
+                </label><br>
+                <input type="radio" id="q4-a3" name="q4" value="wrong">
+                <label for="q4-a3">                  
+                    7
+                </label><br>
+                <input type="radio" id="q4-a3" name="q4" value="wrong">
+                <label for="q4-a3">
+                    қате
+                </label>
+            </section>
+            <section>
+                <h2>Сұрақ 5</h2>
+                <p>
+                    Кодты орындағаннан кейін экранға қандай сан шығады?<br><p>Шарт </p><pre><code>
+x = 5
+y = 2 
+z = x%y print(z)
+                    </code></pre>
+                </p>
+                <input type="radio" id="q5-a1" name="q5" value="correct">
+                <label for="q5-a1">
+                    1
+                  </label><br>
+                <input type="radio" id="q5-a2" name="q5" value="wrong">
+                <label for="q5-a2">
+                    2.5
+                </label><br>
+                <input type="radio" id="q5-a3" name="q5" value="wrong">
+                <label for="q5-a3">
+                    0.1
+                </label><br>
+                <input type="radio" id="q5-a3" name="q5" value="wrong">
+                <label for="q5-a3">
+                    қате
+                </label>
+            </section>
+            <section>
+                <h2>Сұрақ 6</h2>
+                <p>
+                    Кодты орындағаннан кейін экранға не шығады?<br><p>Шарт </p><pre><code>
+x = 5 
+x += x - x 
+print(x)
+  </code></pre>
+                </p>
+                <input type="radio" id="q6-a1" name="q6" value="wrong">
+                <label for="q6-a1">
+                    0
+                </label><br>
+                <input type="radio" id="q6-a2" name="q6" value="correct">
+                <label for="q6-a2">
+                    5
+                </label><br>
+                <input type="radio" id="q6-a3" name="q6" value="wrong">
+                <label for="q6-a3">
+                    10
+                </label><br>
+                <input type="radio" id="q6-a3" name="q6" value="wrong">
+                <label for="q6-a3">
+                    қате
+                </label>
+            </section>
+            
+            
+            <section>
+                <h2>Сұрақ 7</h2>
+                <p>
+                    Оналтылық жүйеде көрсетілген сандарды таңдаңыз.
+                </p>
+                <input type="radio" id="q7-a1" name="q7" value="wrong">
+                <label for="q7-a1">
+                    0X755
+                </label><br>
+                <input type="radio" id="q7-a2" name="q7" value="correct">
+                <label for="q7-a2">
+                    0x1101
+                </label><br>
+                <input type="radio" id="q7-a3" name="q7" value="wrong">
+                <label for="72-a3">
+                    0o1675 
+                </label>
+            </section><section>
+                <h2>Сұрақ 8</h2>
+                <p>
+                Кодты орындағаннан кейін экранға не шығады?<br><p>Шарт </p><pre><code>
+x = 3
+y = 3.0 
+z = '3'
+print(x + y + z)
+                      </code></pre>
+                </p>
+                <input type="radio" id="q8-a1" name="q8" value="wrong">
+                <label for="q8-a1">
+                     9.0
+                </label><br>
+                <input type="radio" id="q8-a2" name="q8" value="correct">
+                <label for="q8-a2">
+                     қате
+                </label><br>
+                <input type="radio" id="q8-a3" name="q8" value="wrong">
+                <label for="q8-a3">
+                    9
+                </label>
+            </section><section>
+                <h2>Сұрақ 9</h2>
+                <p>
+                    Python тілінде бөлуден қалған қалдықты алу үшін қандай оператор қолданылады?
+                </p>
+                <input type="radio" id="q9-a1" name="q9" value="wrong">
+                <label for="q9-a1">
+                    **
+                </label><br>
+                <input type="radio" id="q9-a2" name="q9" value="correct">
+                <label for="q9-a2">
+                    %
+                </label><br>
+                <input type="radio" id="q9-a3" name="q9" value="wrong">
+                <label for="q9-a3">
+                    // 
+                </label>
+            </section><section>
+                <h2>Сұрақ 10</h2>
+                <p> <pre><code>
+print(5**(5 - 2))                 
+                </code></pre>
+командасын орындағаннан кейін экранға не шығады?
+                </p>
+                <input type="radio" id="q10-a1" name="q10" value="wrong">
+                <label for="q10-a1">
+                    45.0
+                </label><br>
+                <input type="radio" id="q10-a2" name="q10" value="correct">
+                <label for="q10-a2">
+                    125
+                </label><br>
+                <input type="radio" id="q10-a3" name="q10" value="wrong">
+                <label for="q10-a3">
+                    қате
+                </label>
+            </section><section>
+                <h2>Сұрақ 11</h2>
+                <p>Кодты орындағаннан кейін экранға не шығады?
+                    <br><p>Шарт </p><pre><code>
+x = round(3.153, 2)
+y = round(6.25) 
+print(x + y)
+                          </code></pre>
+                    
+                </p>
+                <input type="radio" id="q11-a1" name="q11" value="wrong">
+                <label for="q11-a1">
+                    9.4
+                </label><br>
+                <input type="radio" id="q11-a2" name="q11" value="correct">
+                <label for="q11-a2">
+                     9.45
+                </label><br>
+                <input type="radio" id="q11-a3" name="q11" value="wrong">
+                <label for="q11-a3">
+                    9.15
+                </label>
+            </section>
+            
+            <section>
+                <h2>Сұрақ 12</h2>
+                <p>
+                    Python-дағы санның модулін табу үшін қайсы функция қолданылады?
+                </p>
+                <input type="radio" id="q12-a1" name="q12" value="wrong">
+                <label for="q12-a1">
+                    round
+                </label><br>
+                <input type="radio" id="q12-a2" name="q12" value="correct">
+                <label for="q12-a2">
+                    abs
+                </label><br>
+                <input type="radio" id="q12-a3" name="q12" value="wrong">
+                <label for="q12-a3">
+                    divmod
+                </label>
+            </section>
+            <button type="button" id="submit-quiz">Жауаптарды тексеру</button>
+            <button type="button" id="reset-quiz" class="hidden">Тестті қайтадан тапсыру</button>
+        </form>
+
+        <div id="quiz-results" class="hidden">
+            <h2>Нәтиже:</h2>
+            <p id="score"></p>
+            <p id="incorrect-answers"></p>
+        </div>
+    </main>
+
+    <script>
+        document.getElementById('submit-quiz').addEventListener('click', function () {
+            const questions = document.querySelectorAll('form section');
+            let score = 0;
+            let incorrectAnswers = [];
+
+            questions.forEach((section, index) => {
+                const questionNumber = index + 1;
+                const selected = section.querySelector('input[name="q' + questionNumber + '"]:checked');
+
+                if (selected) {
+                    if (selected.value === 'correct') {
+                        score++;
+                    } else {
+                        incorrectAnswers.push(`Сұрақ ${questionNumber}`);
+                    }
+                } else {
+                    incorrectAnswers.push(`Сұрақ ${questionNumber} (жауап жоқ)`);
+                }
+            });
+
+            document.getElementById('score').textContent = `Сіз ${questions.length} сұрақтың ${score} дұрыс жауап бердіңіз.`;
+            document.getElementById('incorrect-answers').textContent = incorrectAnswers.length 
+                ? `Қателер: ${incorrectAnswers.join(', ')}.` 
+                : 'Сіз барлық сұрақтарға дұрыс жауап бердіңіз!';
+
+            document.getElementById('quiz-results').classList.remove('hidden');
+
+           // Тексеруден кейін радио түймелерін құлыптау
+            const inputs = document.querySelectorAll('input[type="radio"]');
+            inputs.forEach(input => {
+                input.disabled = true;
+            });
+
+         // Тестті қайта тапсыру үшін түймені көрсету
+            document.getElementById('reset-quiz').classList.remove('hidden');
+        });
+
+        // Тестті қалпына келтіру
+        document.getElementById('reset-quiz').addEventListener('click', function () {
+           // Барлық радио түймелерін қалпына келтіру
+            const inputs = document.querySelectorAll('input[type="radio"]');
+            inputs.forEach(input => {
+                input.checked = false;
+                input.disabled = false;
+            });
+
+            // Нәтижелерді және қайта өту түймесін жасыру
+            document.getElementById('quiz-results').classList.add('hidden');
+            document.getElementById('reset-quiz').classList.add('hidden');
+        });
+    </script>
+    
+</body>
+</html>

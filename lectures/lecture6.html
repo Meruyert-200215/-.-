@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6-дәріс: Python Булев типі (True немесе False)</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <h1>6-дәріс: Python Булев типі (True немесе False)</h1>
+        <p>Булев мәндер екі жағдайды білдіреді: True немесе False.   </p>
+    </header>
+    <main><button onclick="window.close()">Артқа</button>
+        <section>
+            <h2>Булев мәндердің қажеттілігі
+            </h2>
+            <p>Бағдарламалауда сізге жиі белгілі бір өрнектің <em>True</em> немесе <em>False </em>екенін білу керек болады.
+           <br>Python кез келген өрнекті бағалап, осы екі нәтижені қайтарады: </p>
+            <h2>
+                Мысал:
+            </h2>
+            <pre><code>
+                print(10 > 9)  # True
+                print(10 == 9) # False
+                print(10 < 9)  # False   
+            </code></pre>
+         </section>
+          <section>
+            <h2>
+                Шартты операторларда қолдану
+            </h2>
+            <p>
+                <em>if</em> шарты орындалғанда, Python булев жауап қайтарады: <em>True</em> немесе <em>False.</em>
+            </p>
+            <h2>
+                Мысал:
+            </h2>
+            <pre><code>
+                a = 200
+                b = 33
+                
+                if b > a:
+                  print("b a-дан үлкен")
+                else:
+                  print("b a-дан кіші")                
+            </code></pre>
+        </section>
+
+
+        <section>
+            <h2>
+                Мәндер мен айнымалыларды бағалау
+            </h2>
+            <p>
+                Python-ның <em>bool()</em> функциясы кез келген мәнді бағалап, <em>True </em>немесе <em>False</em> қайтара алады.
+            </p>
+            <h2>
+                Мысал:
+            </h2>
+            <p>
+                Жолдарды және сандарды бағалау:
+            </p>
+            <pre><code>
+                print(bool("Сәлем"))  # True
+                print(bool(15))       # True
+            </code></pre>    
+            <p>
+                Айнымалыларды бағалау:
+            </p>
+            <pre><code>
+                x = "Сәлем" 
+                y = 15
+                print(bool(x))  # True
+                print(bool(y))  # True
+
+            </code></pre>
+        </section>
+
+        <section>
+            <h2>
+                Көптеген мәндер <em>"True"</em> болып бағаланады
+            </h2>
+            <p>
+                Көптеген мәндер <em>True</em>, егер олардың мазмұны бар болса
+            <ol>
+                	Кез келген жол <em>True</em>, тек бос жолдан басқа.
+                	Кез келген сан <em>True</em>, тек <em>0</em>-ден басқа.
+                    Кез келген тізім, жинақ, не сөздік <em>True</em>, тек бос болса ғана False.
+
+            </ol>
+            </p>
+            
+            <h2>
+                Мысал:
+            </h2>
+            <p>
+                Мына өрнектер <em>True</em> қайтарады: 
+            </p>
+            <pre><code>
+                print(bool("abc"))                 # True
+                print(bool(123))                   # True
+                print(bool(["apple", "banana"]))   # True
+                
+            </code></pre>
+        </section>
+
+        <section>
+            <h2>
+                Кейбір мәндер <em>"False"</em> болып бағаланады
+            </h2>
+            <p>
+                Бос мәндер мысалы: <em>((), [], {}, ""</em>), сан <em>0</em>, <em>None</em>, және <em>"False"</em> мәндері <em>"False"</em> болып бағаланады.
+            </p>
+            <h2>
+                Мысал:
+            </h2>
+            <p>
+                Мына өрнектер <em>False</em> қайтарады:
+            </p>
+            <pre><code>
+                print(bool(False))   # False
+                print(bool(None))    # False
+                print(bool(0))       # False
+                print(bool(""))      # False
+                print(bool(()))      # False
+                print(bool([]))      # False
+                print(bool({}))      # False                
+            </code></pre>
+            <p>
+                Кейбір объектілер <em>False</em> болып бағалануы мүмкін, егер олар <em>len</em> функциясы арқылы <em>0</em> немесе <em>"False"</em> қайтаратын болса:
+            </p>
+            <h2>Мысал:</h2>
+            <pre><code>
+          class myclass():
+                def __len__(self):
+                   return 0
+          myobj = myclass()
+          print(bool(myobj))  # False
+            </code></pre>
+        </section>
+
+
+        
+    <section>
+        <h2>
+            Функциялар булев мәндер қайтара алады
+        </h2>
+        <p>
+            Сіз функцияларды құрып, олардың <em>True</em> немесе <em>False</em> қайтаратын нәтижелерін пайдалана аласыз.
+        </p>
+        <h2>
+            Мысал:
+        </h2>
+        <p>
+            Функцияны басып шығару:
+        </p>
+        <pre><code>
+            def myFunction():
+            return True
+          print(myFunction())  # True
+        </code></pre>
+        <p>
+            Булев жауап негізінде код орындау:
+        </p>
+        <h2>
+            Мысал:
+        </h2>
+        <pre>
+            <code>
+                def myFunction():
+                return True
+                if myFunction():
+                 print("Иә!")
+                 else:
+                  print("Жоқ!")
+            </code>
+        </pre>
+        <p>
+            Python-да isinstance() сияқты кірістірілген функциялар бар, олар объектінің белгілі бір деректер түріне жататынын тексеруге қолданылады.
+
+        </p>
+        <h2>
+            Мысал:
+        </h2>
+        <p>
+            Объектінің бүтін сан екенін тексеру:
+        </p>
+        <pre>
+            <code>
+                x = 200
+                print(isinstance(x, int))  # True
+            </code>
+        </pre>
+    </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Электронный учебник Python</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Жасырын блоктарға арналған стильдер */
+        .hidden {
+            display: none;
+        }
+        .item-list button {
+            display: block;
+            margin: 5px 0;
+        }
+        #content {
+            display: flex;
+        }
+        #sidebar {
+            width: 20%;
+            padding: 10px;
+            border-right: 1px solid #ccc;
+        }
+        #main-content {
+            width: 80%;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Python электронды оқулығы</h1>
+        <nav>
+            <a href="document/syllabus.pdf" target="_blank" style="display:inline-block;">
+                <button>Силлабус</button>
+            </a>
+            <button id="btn-lectures">Дәрістер</button>
+            <button id="btn-tests"> Тесттер</button>
+            <button id="btn-tasks">Зертханалық жұмыс</button>
+            <button id="btn-documentt">Қосымша</button>
+        </nav>
+    </header>
+
+    <main id="content">
+        <div id="sidebar">
+            <div id="lectures" class="hidden">
+                <h3>Дәрістер тізімі:</h3>
+                <div class="item-list" id="lecture-list"></div>
+            </div>
+
+            <div id="tests" class="hidden">
+                <h3>Тесттер тізімі:</h3>
+                <div class="item-list" id="test-list"></div>
+            </div>
+
+            <div id="tasks" class="hidden">
+                <h3>Зертханалық жұмыс:</h3>
+                <div class="item-list" id="task-list"></div>
+            </div>
+            <div id="documentt" class="hidden">
+                <h3>Документ тізімі:</h3>
+                <div class="item-list" id="documentt-list"></div>
+            </div>
+        </div>
+
+        <div id="main-content">
+            <h2 class="welcome hidden">Қош келдіңіздер!</h2>
+            <p class="welcome hidden">Бұл оқулық Python-нул нөлден үйренуге көмектеседі.</p>
+            <div id="dynamic-content">
+                <p>Сол жақтағы тізімнен элементті таңдаңыз</p>
+            </div>
+        </div>
+    </main>
+
+
+    <script>
+        // Навигация элементтері
+        const btnLectures = document.getElementById('btn-lectures');
+        const btnTests = document.getElementById('btn-tests');
+        const btnTasks = document.getElementById('btn-tasks');
+        const btnDocumentt = document.getElementById('btn-documentt');
+    
+        // Бөлімдерге арналған контейнерлер
+        const lecturesSection = document.getElementById('lectures');
+        const testsSection = document.getElementById('tests');
+        const tasksSection = document.getElementById('tasks');
+        const documenttSection = document.getElementById('documentt');
+        const dynamicContent = document.getElementById('dynamic-content');
+    
+        // Элементтерге арналған тізімдер
+        const lectureList = document.getElementById('lecture-list');
+        const testList = document.getElementById('test-list');
+        const taskList = document.getElementById('task-list');
+        const documenttList = document.getElementById('documentt-list');
+            
+    
+        // Бөлімдердің көрінуін ауыстыру функциясы
+        function showSection(section) {
+            lecturesSection.classList.add('hidden');
+            testsSection.classList.add('hidden');
+            tasksSection.classList.add('hidden');
+            documenttSection.classList.add('hidden');
+            document.querySelectorAll('.welcome').forEach(el => el.classList.add('hidden'));
+    
+            section.classList.remove('hidden');
+        }
+    
+        //  Мазмұнды негізгі экранға жүктеу мүмкіндігі
+        function loadContent(filePath) {
+            fetch(filePath)
+                .then(response => response.text())
+                .then(data => {
+                    dynamicContent.innerHTML = data;
+                })
+                .catch(err => {
+                    dynamicContent.innerHTML = '<p>Құжатты ашу мүмкін емес</p>';
+                });
+        }
+    
+        // Дәрістерге арналған түймелерді құру
+        for (let i = 1; i <= 10; i++) {
+            const button = document.createElement('a');
+            button.textContent = `${i} Дәріс`;
+            button.href =`lectures/lecture${i}.html`;  // Ссылка на тест
+            button.target = "_blank";  // Открывать в новой вкладке
+            button.style.display = "block";
+            lectureList.appendChild(button);
+        }
+
+        // Тесттерге арналған түймелерді құру
+        for (let i = 1; i <= 10; i++) {
+            const button = document.createElement('a');
+            button.textContent = `Тест ${i}`;
+            button.href = `tests/test${i}.html`;  // Ссылка на тест
+            button.target = "_blank";  // Открывать в новой вкладке
+            button.style.display = "block";
+            testList.appendChild(button);
+        }
+    
+        // Практикалық тапсырмалар үшін түймелерді құру к
+        for (let i = 1; i <= 10; i++) {
+            const button = document.createElement('a');
+            button.textContent = ` ${i} Тапсырма`;
+            button.href = `tasks/task${i}.html`;  
+            button.target = "_blank";  
+            button.style.display = "block";
+            taskList.appendChild(button);
+        }
+    
+
+        
+         
+         // doc үшін атаулары бар түймелерді құру 
+const documentNames = ['СӨЖ №1', 'СӨЖ №2', 'Қосымша есептер'];
+
+for (let i = 0; i < documentNames.length; i++) {
+    const button = document.createElement('a');
+    button.textContent = documentNames[i];
+    button.href = `documentt/doc${i + 1}.pdf`;  // Файл атаулары doc1.pdf, doc2.pdf ...
+    button.target = "_blank";  // Жаңа терезеде ашылады
+    button.style.display = "block";
+    documenttList.appendChild(button);
+}
+
+
+
+
+
+
+        // Навигацияға арналған оқиға өңдегіштері / обработчик
+        btnLectures.addEventListener('click', () => showSection(lecturesSection));
+        btnTests.addEventListener('click', () => showSection(testsSection));
+        btnTasks.addEventListener('click', () => showSection(tasksSection));
+        btnDocumentt.addEventListener('click', () => showSection(documenttSection));
+    </script>
+    
+ 
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4-дәріс: Python Сандар</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <h1>4-дәріс: Python-дағы сандар</h1>
+        <p>
+            Python-да үш сандық түр бар:<br>
+•	int<br>
+•	float<br>
+•	complex<br>             
+        </p>
+</header>
+
+    <main>
+        <button onclick="window.close()">Артқа</button>
+  <section>
+        <p>Айнымалылар сандық түрлерге оларға мәнді тағайындаған кезде жасалады: </p>    
+    <h2>Мысал</h2>
+<pre><code>
+ x = 1  # int
+y = 2.8  # float
+z = 1j  # complex
+    </code></pre>
+    <p>Кез келген объектінің түрін тексеру үшін Python-да type() функциясын пайдаланыңыз:</p>  
+        <h2>Мысал</h2>
+    <pre><code>
+print(type(x))
+print(type(y))
+print(type(z))
+        </code></pre>
+</section>
+<section>
+<h2>Бүтін сандар (Int) </h2>
+<p>Int - немесе бүтін сан, оң немесе теріс бүтін санды, ондық бөлшексіз, шектеусіз ұзындықпен білдіреді.</p>
+<h2> Мысал</h2>
+<pre><code>
+x = 1
+y = 35656222554887711
+z = -3255522
+    
+print(type(x))
+print(type(y))
+print(type(z))  
+</code></pre>
+</section>
+<section>
+<h2>Бөлшек сандар (Float)</h2>
+<p>Float - немесе бөлшек сан, оң немесе теріс болуы мүмкін және бір немесе бірнеше ондық бөлшекке ие болады.</p>
+<h2>Мысал</h2>
+<pre><code>
+x = 1.10
+y = 1.0
+z = -35.59
+
+print(type(x))
+print(type(y))
+print(type(z))
+</code></pre>
+
+<p>Бөлшек сандар 10-ның дәрежесін білдіретін "e" әрпі арқылы көрсетілуі мүмкін.</p>
+<h2>Мысал</h2>
+<pre><code>
+x = 35e3
+y = 12E4
+z = -87.7e100
+    
+print(type(x))
+print(type(y))
+print(type(z))
+</code></pre>
+</section>
+<section>
+<h2>
+Күрделі сандар (Complex)
+</h2>
+<P>Complex - немесе күрделі сандар, мнималық бөлігін көрсету үшін "j" әрпін пайдаланады.
+</P>
+<h2>Мысал</h2>
+<pre><code>
+    x = 3+5j
+    y = 5j
+    z = -5j
+    
+    print(type(x))
+    print(type(y))
+    print(type(z))   
+</code></pre>
+</section>
+
+
+<section>
+    <h2>
+        Типті түрлендіру
+        </h2>
+    <P>
+        Бір типті екінші типке келесі әдістерді пайдаланып түрлендіруге болады: int(), float(), complex().
+
+    </P>
+    
+    <h2>
+    Мысал
+    </h2>
+    <pre><code>
+x = 1  # int
+y = 2.8  # float
+z = 1j  # complex
+
+# int-ті float-қа түрлендіру:
+a = float(x)
+
+# float-ты int-ке түрлендіру:
+b = int(y)
+
+# int-ті complex-ке түрлендіру:
+c = complex(x)
+
+print(a)
+print(b)
+print(c)
+
+print(type(a))
+print(type(b))
+print(type(c))
+    </code></pre>
+    <p>
+        Ескерту: Күрделі сандарды басқа типке түрлендіру мүмкін емес.
+    </p>
+    </section>
+
+
+    <section>
+        <h2>
+            Кездейсоқ сандар
+                </h2>
+        <P>
+            Python-да кездейсоқ сандар жасау үшін random() функциясы жоқ, бірақ кездейсоқ сандар жасау үшін random модулін пайдалануға болады:
+                    
+        </P>
+        
+        <h2>
+        Мысал
+        </h2>
+        <pre><code>
+            import random
+
+            print(random.randrange(1, 10))
+            
+            
+        </code></pre>
+        
+        </section>
+    </main>
+</body>
+</html>

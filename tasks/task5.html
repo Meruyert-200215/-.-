@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практикалық тапсырмалар</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <h1>Тізім</h1>
+    </header>
+    <main>
+        <button onclick="window.close()">Артқа</button>
+        <section>
+            <h2>1-Тапсырма:  </h2>
+            <p> 
+                Fruits тізіміндегі екінші элементті көрсетіңіз.                                <br>
+                <em>
+                    fruits= ["алма", "банан", "шие"] print ()
+            </em></p>
+            <div class="hint" id="hint1" style="display: none;">
+                <strong>Кеңес:</strong>  <code> 
+                    fruits[1]</code> қолданыңыз.
+            </div>
+            <textarea id="code1" rows="4" cols="50" placeholder="Кодты осында енгізіңіз..."></textarea><br>
+            <button type="button" id="check1">Тексеру</button>
+            <div id="result1" style="display: none;"></div>
+        </section>
+
+        <section>
+            <h2>2-Тапсырма:</h2>
+            <p>
+                Fruits тізіміндегі "алма" мәнін "киви" күйіне өзгертіңіз. <br>
+<i>Fruits = ["алма", "банан", "шие"] =  </i>
+            </p>
+            <div class="hint" id="hint2" style="display: none;">
+                <strong>Кеңес:</strong> <code>fruits[0] ="киви" </code> көмегімен жүзеге асырылады .
+            </div>
+            <textarea id="code2" rows="4" cols="50" placeholder="Кодты осында енгізіңіз..."></textarea><br>
+            <button type="button" id="check2">Тексеру</button>
+            <div id="result2" style="display: none;"></div>
+        </section>
+
+        <section>
+            <h2>3-Тапсырма:</h2>
+            <p>
+                Fruits тізіміне "апельсин" қосу үшін append әдісін қолданыңыз.
+                                <i>fruits= ["алма", "банан", "шие"]  </i>
+            </p>
+            <div class="hint" id="hint3" style="display: none;">
+                <strong>Кеңес:</strong>  <code>fruits.append("апельсин")</code> қолданыңыз .
+            </div>
+            <textarea id="code3" rows="4" cols="50" placeholder="Кодты осында енгізіңіз..."></textarea><br>
+            <button type="button" id="check3">Тексеру</button>
+            <div id="result3" style="display: none;"></div>
+        </section>
+
+        <section>
+            <h2>4-Тапсырма:</h2>
+            <p>
+                Fruits тізіміне екінші элемент ретінде "лимон" қосу үшін insert әдісін пайдаланыңыз.
+                                <i>fruits= ["алма", "банан", "шие"]   "лимон") </i>
+            </p>
+            <div class="hint" id="hint4" style="display: none;">
+                <strong>Кеңес:</strong>  <code>fruits.insert(1,</code> қолданыңыз .
+            </div>
+            <textarea id="code4" rows="4" cols="50" placeholder="Кодты осында енгізіңіз..."></textarea><br>
+            <button type="button" id="check4">Тексеру</button>
+            <div id="result4" style="display: none;"></div>
+        </section>
+
+        <section>
+            <h2>5-Тапсырма:</h2>
+            <p>
+                fruitsтізімінен "бананды" алып тастау үшін жою әдісін қолданыңыз.     
+                         <i>fruits= ["алма", "банан", "шие"]
+                     </i>
+            </p>
+            <div class="hint" id="hint5" style="display: none;">
+                <strong>Кеңес:</strong>  <code>fruits.remove("банан")</code> қолданыңыз .
+            </div>
+            <textarea id="code5" rows="4" cols="50" placeholder="Кодты осында енгізіңіз..."></textarea><br>
+            <button type="button" id="check5">Тексеру</button>
+            <div id="result5" style="display: none;"></div>
+        </section>
+    </main>
+
+    <script>
+        // 1-тапсырманы тексеру
+        document.getElementById('check1').addEventListener('click', function () {
+            const userCode = document.getElementById('code1').value.trim();
+            const result = document.getElementById('result1');
+            const hint = document.getElementById('hint1');
+            
+            if (userCode === 'fruits=["алма","банан","шие"]print(fruits[1])') {
+                result.textContent = 'Тапсырма орындалды!';
+                result.style.color = 'green';
+            } else {
+                result.textContent = 'Қате! бос орынсыз жазыңыз';
+                result.style.color = 'red';
+                hint.style.display = 'block';
+            }
+            result.style.display = 'block';
+        });
+
+        // 2-тапсырманы тексеру
+        document.getElementById('check2').addEventListener('click', function () {
+            const userCode = document.getElementById('code2').value.trim();
+            const result = document.getElementById('result2');
+            const hint = document.getElementById('hint2');
+            
+            if (userCode === 'fruits=["алма","банан","шие"] fruits[0]="киви"') {
+                result.textContent = 'Тапсырма орындалды!';
+                result.style.color = 'green';
+            } else {
+                result.textContent = 'Қате! бос орынсыз жазыңыз';
+                result.style.color = 'red';
+                hint.style.display = 'block';
+            }
+            result.style.display = 'block';
+        });
+
+        // 3-тапсырманы тексеру
+        document.getElementById('check3').addEventListener('click', function () {
+            const userCode = document.getElementById('code3').value.trim();
+            const result = document.getElementById('result3');
+            const hint = document.getElementById('hint3');
+            
+            if (userCode === 'fruits=["алма","банан","шие"]fruits.append("апельсин")') {
+                result.textContent = 'Тапсырма орындалды!';
+                result.style.color = 'green';
+            } else {
+                result.textContent = 'Қате! бос орынсыз жазыңыз';
+                result.style.color = 'red';
+                hint.style.display = 'block';
+            }
+            result.style.display = 'block';
+        });
+
+          // 4-тапсырманы тексеру
+          document.getElementById('check4').addEventListener('click', function () {
+            const userCode = document.getElementById('code4').value.trim();
+            const result = document.getElementById('result4');
+            const hint = document.getElementById('hint4');
+            
+            if (userCode === 'fruits=["алма","банан","шие"]fruits.insert(1,"лимон")') {
+                result.textContent = 'Тапсырма орындалды!';
+                result.style.color = 'green';
+            } else {
+                result.textContent = 'Қате! бос орынсыз жазыңыз';
+                result.style.color = 'red';
+                hint.style.display = 'block';
+            }
+            result.style.display = 'block';
+        });
+
+          // 5-тапсырманы тексеру
+          document.getElementById('check5').addEventListener('click', function () {
+            const userCode = document.getElementById('code5').value.trim();
+            const result = document.getElementById('result5');
+            const hint = document.getElementById('hint5');
+            
+            if (userCode === 'fruits=["алма","банан","шие"]fruits.remove("банан")') {
+                result.textContent = 'Тапсырма орындалды!';
+                result.style.color = 'green';
+            } else {
+                result.textContent = 'Қате! бос орынсыз жазыңыз';
+                result.style.color = 'red';
+                hint.style.display = 'block';
+            }
+            result.style.display = 'block';
+        });
+    </script>
+    
+</body>
+</html>
